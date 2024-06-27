@@ -475,7 +475,7 @@ a, a:visited, a:hover {
 .banner .image-area .info-expert {
   top: 0;
   right: 0;
-  z-index: -1000;
+  z-index: 50;
 }
 .banner .image-area .info-live {
   top: 11.25rem;
@@ -716,7 +716,7 @@ a, a:visited, a:hover {
   aspect-ratio: 1/1;
   -o-object-fit: cover;
      object-fit: cover;
-  opacity: 60%;
+  opacity: 80%;
 }
 .courses .main-container .card_info {
   display: flex;
