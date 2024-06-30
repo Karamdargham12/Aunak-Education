@@ -1373,16 +1373,16 @@ a, a:visited, a:hover {
 .footer_main {
   margin: 4rem 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(15.625rem, 1fr));
-  -moz-column-gap: 2rem;
-       column-gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(12.625rem, 3fr));
+  -moz-column-gap: 4rem;
+       column-gap: 4rem;
   align-items: center;
 }
 .footer_main .logo {
-  text-align: left;
+  text-align: center;
 }
 .footer_main .company, .footer_main .resources, .footer_main .quick {
-  text-align: right;
+  text-align: center;
 }
 .footer_main .company h1, .footer_main .resources h1, .footer_main .quick h1 {
   font-size: 1.8rem;
