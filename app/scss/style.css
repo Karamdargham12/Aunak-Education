@@ -386,7 +386,6 @@ a, a:visited, a:hover {
     cursor: pointer;
   }
   .header .menu-hamburger.active {
-    background-color: var(--lightblue);
     background-image: var(--toggleactiveimg);
   }
 }
