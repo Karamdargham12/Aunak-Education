@@ -15,19 +15,7 @@
     /* =======================================
         For slider
     =======================================*/
-    $(".slider_owl").owlCarousel({
-        items: 1,
-        nav: false,
-        dots: true,
-        autoplay: true,
-        autoplayTimeout: 5000, // Default is 5000
-        smartSpeed: 1500, // Default is 250
-        loop: true,
-        navText: ["<i class='icon-glyph-205'></i>", "<i class='icon-glyph-204'></i>"],
-        mouseDrag: true,
-        touchDrag: true,
-        nav: true,
-    });
+
  
 
     /*=======================================
