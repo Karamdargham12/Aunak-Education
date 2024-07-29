@@ -34,6 +34,19 @@
         nav: true,
         navText: ["<i class='arrow_left'></i>", "<i class='arrow_right '></i>"]
     }); 
+    $("#best_book2").owlCarousel({
+        autoplayTimeout: 5000, //Set AutoPlay to 5 seconds
+        autoplay: true,
+        smartSpeed: 2000, // Default is 250
+        items: 1,   
+        loop: true,
+        touchDrag: true,
+        mouseDrag: true,
+        pagination: false,
+        dots: true,
+        nav: true,
+        navText: ["<i class='arrow_left'></i>", "<i class='arrow_right '></i>"]
+    }); 
 
     /*=======================================
         Feedback Section  

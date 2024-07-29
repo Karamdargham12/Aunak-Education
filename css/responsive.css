@@ -59,12 +59,18 @@
   .best-book-section .base-header {
     margin-top: -25px;
   }
+  .best-book2-section .base-header {
+    margin-top: -25px;
+  }
 
   .bbook_btn {
     margin-top: 45px;
   }
 
   #best_book::after {
+    top: -20px;
+  }
+  #best_book2::after {
     top: -20px;
   }
 
@@ -84,6 +90,17 @@
     margin-right: 300px;
   }
 
+  .best-book2-section .col-lg-6:first-child {
+    width: 55%;
+  }
+
+  .best-book2-section .col-lg-6:last-child {
+    width: 45%;
+  }
+
+  .best-book2-section .owl-dots {
+    margin-right: 300px;
+  }
 
   /* Feedback */
   .lfeedback_img {
@@ -276,6 +293,14 @@
     bottom: 0px;
     margin-bottom: -50px;
   }
+  .best-book2-section .owl-nav {
+    margin-left: 0px;
+    right: 0%;
+    left: auto;
+    margin-right: 110px;
+    bottom: 0px;
+    margin-bottom: -50px;
+  }
 
   .bbook_crs_item {
     width: 89%;
@@ -284,6 +309,9 @@
   }
 
   .best-book-section .base-header {
+    text-align: center;
+  }
+  .best-book2-section .base-header {
     text-align: center;
   }
 
@@ -302,8 +330,20 @@
     height: 85%;
     top: 25px;
   }
+  #best_book2::after {
+    width: 81%;
+    height: 85%;
+    top: 25px;
+  }
 
   .best-book-section .owl-dots {
+    right: auto;
+    margin-right: 0px;
+    bottom: 0px;
+    margin-bottom: -49px;
+    width: auto;
+  }
+  .best-book2-section .owl-dots {
     right: auto;
     margin-right: 0px;
     bottom: 0px;
@@ -607,6 +647,9 @@
   }
 
   #best_book::after {
+    display: none;
+  }
+  #best_book2::after {
     display: none;
   }
 
