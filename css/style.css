@@ -292,7 +292,7 @@ section {
 .base-header {
   padding-bottom: 40px;
   margin: auto;
-  text-align: left;
+  text-align: right;
 }
 
 
@@ -1264,7 +1264,6 @@ section {
 ------------------------------------------------------*/
 
 .category-section {
-  
   background: #F8F7F3;
   padding: 30px 0px 93px;
 }
@@ -1278,15 +1277,21 @@ section {
   border-radius: 12px;
   height: 250px;
 }
+.feature-category p{
+  color: black;
+}
+.category-item.slick-current h1{
+  color: white;
+}
 .category-item h1{
   text-align: center;
 font-size: 18px !important;
 }
-
 .category-section .slick-initialized .slick-slide {
   box-sizing: border-box ;
   width: 300px !important;
   margin: 0px 15px !important;
+  display: flex;
   margin-bottom: 30px !important;
 }
 
@@ -1304,12 +1309,7 @@ font-size: 18px !important;
   line-height: 34px;
   margin-left: 25px;
 }
-.feature-category p{
-  color: black;
-}
-.category-item.slick-current h1{
-  color: white;
-}
+
 .category-item.slick-current {
   color: white;
   background: #42C0C6;
@@ -1559,6 +1559,17 @@ font-size: 18px !important;
 }
 
 #best_book::after {
+  position: absolute;
+  content: "";
+  width: 81%;
+  height: 100%;
+  top: -50px;
+  right: 13px;
+  z-index: -1;
+  border-radius: 8px;
+  background-color: rgba(0, 147, 141, 0.09);
+}
+#best_book2::after {
   position: absolute;
   content: "";
   width: 81%;
@@ -2171,7 +2182,6 @@ footer ul li {
 /* Subfooter */
 .footertwo-section .container {
   border-bottom: 1px solid #E8D6D6;
-
 }
 
 .footertwo-section .subfooter {
