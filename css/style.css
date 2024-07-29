@@ -1264,22 +1264,29 @@ section {
 ------------------------------------------------------*/
 
 .category-section {
+  
   background: #F8F7F3;
   padding: 30px 0px 93px;
 }
 
-.category-item {
+.feature-category {
   display: flex;
   align-items: unset;
   background: #fff;
   align-content: center;
   padding: 30px 35px;
   border-radius: 12px;
+  height: 250px;
+}
+.category-item h1{
+  text-align: center;
+font-size: 18px !important;
 }
 
 .category-section .slick-initialized .slick-slide {
+  box-sizing: border-box ;
+  width: 300px !important;
   margin: 0px 15px !important;
-  display: flex;
   margin-bottom: 30px !important;
 }
 
@@ -1297,8 +1304,14 @@ section {
   line-height: 34px;
   margin-left: 25px;
 }
-
+.feature-category p{
+  color: black;
+}
+.category-item.slick-current h1{
+  color: white;
+}
 .category-item.slick-current {
+  color: white;
   background: #42C0C6;
   box-shadow: 0px 0px 25px 2px rgb(213, 205, 205);
 }
@@ -1337,6 +1350,7 @@ section {
 
 .feat-course-section {
   padding-bottom: 180px;
+  padding-top: 80px;
 }
 
 .feat-course-section .base-header {
@@ -2150,14 +2164,14 @@ footer ul li {
 }
 
 .footer_logo ul {
-  margin-top: 17px;
-  margin-bottom: 20px;
+  margin-top: 12px;
+  margin-bottom: 10px;
 }
 
 /* Subfooter */
 .footertwo-section .container {
   border-bottom: 1px solid #E8D6D6;
-  padding-bottom: 70px;
+
 }
 
 .footertwo-section .subfooter {
