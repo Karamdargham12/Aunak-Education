@@ -929,7 +929,6 @@ section {
 
 .hero-section {
   background: #F8F7F3;
-  padding-top: 65px;
   padding-bottom: 130px;
   position: relative;
 }
@@ -1811,6 +1810,9 @@ footer ul li {
 .subfooter p a {
   color: #fff;
 }
+.img-responsive{
+  width: 100%;
+}
 
 /*----------------------------------------------------
    Home Page Two
@@ -1830,8 +1832,7 @@ footer ul li {
 .hero_two {
   background: #EAF1ED;
   padding-bottom: 8px;
-  padding-top: 85px;
-  height: 760px;
+  height: 677px;
 }
 
 .hero_two .row {
