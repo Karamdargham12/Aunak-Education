@@ -1364,6 +1364,7 @@ font-size: 18px !important;
 }
 
 .feat_course_item {
+  height: 100%;
   padding: 15px 15px 25px;
   background: #fff;
   border-radius: 12px;
