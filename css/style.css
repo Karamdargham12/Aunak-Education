@@ -1262,11 +1262,15 @@ section {
 /*----------------------------------------------------
   4. Popular Category Section
 ------------------------------------------------------*/
-
 .category-section {
   background: #F8F7F3;
   padding: 30px 0px 93px;
+  padding-top: 80px;
 }
+.workflow-section {
+  padding-bottom: 93px;
+}
+
 
 .feature-category {
   display: flex;
