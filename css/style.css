@@ -1399,7 +1399,7 @@ font-size: 18px !important;
 
 
 .feat_cour_tit {
-  font-size: 20px;
+  font-size: 15px;
   line-height: 27px;
   font-weight: 700;
   letter-spacing: .2px;
@@ -1705,7 +1705,7 @@ font-size: 18px !important;
 .newsletter_wrap span {
   color: #717173;
   font-size: 16px;
-  ottom: ;
+  
 }
 
 .newsletter_form {
@@ -2140,6 +2140,54 @@ footer ul li {
   font-size: 14px;
 }
 
+
+
+
+.footertwo2-section {
+  background: #EBF2EE;
+  padding-top: 98px;
+}
+
+.footertwo2-section h5 {
+  text-align: center;
+  color: #1F1F1E;
+  padding-bottom: 15px;
+  font-size: 22px;
+}
+
+.footertwo2-section ul li {
+  display: block;
+  text-align: center;
+  margin-left: 0px;
+  margin-bottom: 8px;
+}
+
+.footertwo2-section ul li a {
+  color: #1F1F1E;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footertwo2-section .foo_widget ul {
+  margin-top: -6px;
+}
+
+.footertwo2-section .footer_socil ul li {
+  display: inline-block;
+  text-align: right;
+  margin-right: 4px;
+}
+
+.footertwo2-section .footer_socil ul {
+  text-align: right;
+}
+
+.footertwo2-section .footer_socil ul li a {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+}
 .footer_contact_form .con-field {
   border: none;
   border-radius: 5px;
@@ -3386,7 +3434,6 @@ footer ul li {
   color: #1F1F1E;
   font-size: 42px;
   margin-bottom: 25px;
-  align-contentalign-content: ;
 }
 
 .cta_text p {
