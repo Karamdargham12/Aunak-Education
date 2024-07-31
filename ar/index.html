@@ -748,11 +748,11 @@ h1,h2,h3,h4,h5,h6,p,li,a{
 ========================================-->
 
 <script>
-    const locales = ["ar-AE","en-GB"];
+   const locales = ["ar-AE", "en-GB"];
 
 function getFlagSrc(countryCode) {
   return /^[A-Z]{2}$/.test(countryCode)
-       ? `https://flagsapi.com/${countryCode.toUpperCase()}/shiny/64.png`
+    ? `https://flagsapi.com/${countryCode.toUpperCase()}/shiny/64.png`
     : "";
 }
 
@@ -781,10 +781,9 @@ function setSelectedLocale(locale) {
     listEl.value = otherLocale;
     listEl.addEventListener("mousedown", function () {
       setSelectedLocale(otherLocale);
-      window.location.href = '../index.html'
+      window.location.href = '../index.html';
     });
     dropdownContent.appendChild(listEl);
-    
   });
 
   dropdownBtn.innerHTML = `<img src="${getFlagSrc(
@@ -792,14 +791,8 @@ function setSelectedLocale(locale) {
   )}" />${langName}<span class="arrow-down"></span>`;
 }
 
+// Set the default locale to the first one in the list
 setSelectedLocale(locales[0]);
-const browserLang = new Intl.Locale(navigator.language).language;
-for (const locale of locales) {
-  const localeLang = new Intl.Locale(locale).language;
-  if (localeLang === browserLang) {
-    setSelectedLocale(locale);
-  }
-}
 
 </script>
     <!-- Scripts
