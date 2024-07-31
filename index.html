@@ -756,7 +756,7 @@
 ========================================-->
 
 <script>
-    const locales = ["en-GB","ar-AE"];
+    const locales = ["ar-AE","en-GB"];
 
 function getFlagSrc(countryCode) {
   return /^[A-Z]{2}$/.test(countryCode)
@@ -804,7 +804,7 @@ setSelectedLocale(locales[0]);
 const browserLang = new Intl.Locale(navigator.language).language;
 for (const locale of locales) {
   const localeLang = new Intl.Locale(locale).language;
-  if (localeLang === browserLang) {
+  if (localeLang !== browserLang) {
     setSelectedLocale(locale);
   }
 }
