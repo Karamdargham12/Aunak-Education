@@ -104,6 +104,11 @@ h6 {
   font-weight: 700;
 }
 
+ 
+
+
+
+
 h1 {
   font-size: 36px;
   line-height: 52px;
@@ -334,6 +339,8 @@ section {
   z-index: -1;
   transition: all 0.3s;
 }
+
+
 
 .more-link:hover::before {
   height: 400%;
@@ -3226,6 +3233,9 @@ footer ul li {
   margin-bottom: 31px;
   margin-top: 25px;
 }
+
+
+
 
 .carousel-item.sturev_item {
   border-radius: 10px;
