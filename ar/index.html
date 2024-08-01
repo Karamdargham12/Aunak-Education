@@ -70,7 +70,7 @@
 h1,h2,h3,h4,h5,h6,p,li,a{
     font-family: arabic !important;
 }
-.dropdown button {
+.dropdown-lg button {
   background-color: #253849;
   min-width: 130px;
   width: max-content;
@@ -83,14 +83,14 @@ h1,h2,h3,h4,h5,h6,p,li,a{
   cursor: pointer;
   justify-content: space-evenly;
 }
-.dropdown button img {
+.dropdown-lg button img {
   margin: 0 5px 0 0;
 }
-.dropdown button img,
+.dropdown-lg button img,
 .dropdown-content li img {
   width: 28px;
 }
-.dropdown button,
+.dropdown-lg button,
 .dropdown-content li {
     font-family: arabic !important;
   display: flex;
@@ -109,7 +109,7 @@ h1,h2,h3,h4,h5,h6,p,li,a{
   margin: 0 0 0 5px;
 }
 
-.dropdown button:hover {
+.dropdown-lg button:hover {
   cursor: pointer;
   background-color: #3c5b77;
 }
@@ -145,7 +145,7 @@ h1,h2,h3,h4,h5,h6,p,li,a{
   border-radius: 5px;
 }
 /* Show the dropdown content when the dropdown button is clicked */
-.dropdown:focus-within .dropdown-content {
+.dropdown-lg:focus-within .dropdown-content {
   display: block;
 }
 /* Animate the dropdown content */
@@ -171,7 +171,11 @@ h1,h2,h3,h4,h5,h6,p,li,a{
   border-radius: 8px;
   background: #c2c9d2;
 }
-
+@media (max-width:1200px) {
+    .dropdown-lg button {
+ display: none;
+}
+}
 </style>
 </head>
 
@@ -185,7 +189,7 @@ h1,h2,h3,h4,h5,h6,p,li,a{
 ==================================================-->
     <div class="navigation navigation_two">
         <div class="container" dir="rtl">
-            <div class="dropdown" id="dropdown" dir="ltr" tab-index="0">
+            <div class="dropdown-lg" id="dropdown" dir="ltr" tab-index="0">
                 <button id="dropdown-btn"></button>
                 <ul class="dropdown-content" id="dropdown-content"></ul>
               </div>
