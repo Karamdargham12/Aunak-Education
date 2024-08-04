@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]> <!-->
+<html lang="zxx">
+<!--
+<![endif]-->
+
+<head>
+    <!-- TITLE OF SITE -->
+    <title>عونك للخدمات التعليمية</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Smart Education Technology" />
+    <meta name="keywords"
+        content="Aunak Smart Education, Education, Learning, one page, multipage, responsive, courses," />
+    <meta name="author" content="AunakIT">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Favicons --> 
+    <link rel="apple-touch-icon" sizes="152x152" href="../images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="../images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <!-- CSS Begins 
+================================================== -->
+    <!--Animate Effect-->
+    <link href="../css/animate.css" rel="stylesheet">
+    <link href="../css/hover.css" rel="stylesheet">
+
+    <!-- For Image Preview -->
+    <link rel="stylesheet" href="../css/magnific-popup.css">
+
+    <!--Owl Carousel -->
+    <link href="../css/owl.carousel.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/slick.css">
+
+    <!--BootStrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/normalize.css" rel="stylesheet">
+
+    <!-- Main Style -->
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/responsive.css" rel="stylesheet">
+
+
+    <!--[if IE]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<style>
+    @font-face {
+  font-family: arabic;
+  src: url(../fonts/arabic.ttf);
+}
+.feature-category p{
+    text-align: right !important;
+}
+    .owl-dots {
+  right: 0;
+}
+h1,h2,h3,h4,h5,h6,p,li,a{
+    font-family: arabic !important;
+}
+.dropdown button {
+  background-color: #253849;
+  min-width: 130px;
+  width: max-content;
+  height: 40px;
+  border-radius: 5px;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  justify-content: space-evenly;
+}
+.dropdown button img {
+  margin: 0 5px 0 0;
+}
+.dropdown button img,
+.dropdown-content li img {
+  width: 28px;
+}
+.dropdown button,
+.dropdown-content li {
+    font-family: arabic !important;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+.arrow-down {
+  width: 0;
+  height: 0;
+  display: inline-block;
+  vertical-align: middle;
+  border-style: solid;
+  border-width: 4px 4px 0 4px;
+  border-color: #fff transparent transparent transparent;
+  margin: 0 0 0 5px;
+}
+
+.dropdown button:hover {
+  cursor: pointer;
+  background-color: #3c5b77;
+}
+/* Style for the dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  margin: 1px 0 0 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 5px;
+  overflow-y: scroll;
+  max-height: 315px;
+}
+/* Style for the dropdown content items */
+.dropdown-content li {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  justify-content: end;
+}
+.dropdown-content li img {
+  margin: 0 20px 0px 20px;
+}
+/* Style for the dropdown content items on hover */
+.dropdown-content li:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+  color: blue;
+  border-radius: 5px;
+}
+/* Show the dropdown content when the dropdown button is clicked */
+.dropdown:focus-within .dropdown-content {
+  display: block;
+}
+/* Animate the dropdown content */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.dropdown-content {
+  animation: slideIn 0.3s ease-out;
+}
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background: #c2c9d2;
+}
+
+</style>
+</head>
+
+<body style="font-family: arabic !important;">
+
+    <!-- ::::::::::::::::::::::::::: Start: Preloader section ::::::::::::::::::::::::::: -->
+    <div id="preloader"></div>
+    <!-- ::::::::::::::::::::::::::: End: Preloader section ::::::::::::::::::::::::::: -->
+
+    <!-- Start: Header Section
+==================================================-->
+    <div class="navigation navigation_two">
+        <div class="container" dir="rtl">
+            <div class="dropdown" id="dropdown" dir="ltr" tab-index="0">
+                <button id="dropdown-btn"></button>
+                <ul class="dropdown-content" id="dropdown-content"></ul>
+              </div>
+            <div id="navigation" class="menu-wrap">
+                <ul  dir="ltr">
+                    <li><a href="#">تواصل</a></li>
+                    <li class="has-sub"><a href="#">منتدى</a>
+                        <!--
+                        <ul>
+                            <li><a href="blog.html">Blog One</a> </li>
+                            <li><a href="single-blog.html">Blog Details</a> </li>
+                            <li><a href="events.html">Event Page</a> </li>
+                            <li><a href="single-event.html">Event Details</a> </li>
+                        </ul>
+                    -->
+                    </li>
+                   <li class="has-sub"><a href="#">الدورات</a>
+                    <!--
+                     <ul>
+                            <li><a href="course-category.html">Course Category</a> </li>
+                            <li><a href="courses.html">Our Course</a> </li>
+                            <li><a href="single-course.html">Course Details</a> </li>
+                        </ul>
+                    -->
+                       
+                    </li>
+                    <li class="has-sub"><a href="#">الصفحات</a>
+                        <!--
+                        <ul>
+                            <li><a href="course-category.html">Course Category</a> </li>
+                            <li><a href="courses.html">Our Course</a> </li>
+                            <li><a href="single-course.html">Course Details</a> </li>
+                            <li><a href="login.html">Login Page</a> </li>
+                            <li><a href="register.html">Register Page</a> </li>
+                            <li><a href="teachers.html">Instructor Page</a> </li>
+                            <li><a href="single-teacher.html">Instructor Details</a> </li>
+                            <li><a href="events.html">Event Page</a> </li>
+                            <li><a href="single-event.html">Event Details</a> </li>
+                            <li><a href="gallery.html">Gallery Page</a> </li>
+                            <li><a href="404.html">404 Page</a> </li>
+                        </ul>
+                    -->
+                    </li>
+                    <li><a href="#">حول</a></li>
+                    <li class="active has-sub"><a href="index.html">الرئيسية</a>
+
+                    </li>
+                </ul>
+            </div>
+            <div class="logo">
+                <a href="./index.html"><img class="img-responsive" src="../images/logo-ar.png" style="width: 100%;" alt="">
+                </a>
+            </div>
+            <!-- End: navigation  -->
+            <div class="header_sign" hidden>
+                <a href="#" class="more-link"> Sign in</a>
+            </div>
+            <!-- End: Sign in -->
+        </div>
+        <!--/ container -->
+    </div>
+    <!-- End: header navigation
+==================================================-->
+
+
+    <!-- Start: Hero Section
+==================================================-->
+<section class="workflow-section pt-120">
+    <!-- Container -->
+    <div class="container">
+        <!-- Start: Heading -->
+        <div class="base-header text-center">
+            <h3> Supreme Work Flow</h3>
+        </div>
+        <!-- End: Heading -->
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <!-- category 1 -->
+                <div class="workflow_item">
+                    <i class="pe-7s-search"></i>
+                    <h4> Find Your Course </h4>
+                    <p>Lorem ipsum dolor sit amet can be sed diam nonumy eirmod keeps an
+                        the satriction of whole life that enter.</p>
+                </div>
+            </div>
+            <!--/ col-lg-4 col-md-6 col-sm-12  -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <!-- category 1 -->
+                <div class="workflow_item">
+                    <i class="pe-7s-date"></i>
+                    <h4>Book Your Seat </h4>
+                    <p>Lorem ipsum dolor sit amet can be sed diam nonumy eirmod keeps an
+                        the satriction of whole life that enter.</p>
+                </div>
+            </div>
+            <!--/ col-lg-4 col-md-6 col-sm-12  -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <!-- category 1 -->
+                <div class="workflow_item">
+                    <i class="pe-7s-medal"></i>
+                    <h4> Instant Certified </h4>
+                    <p>Lorem ipsum dolor sit amet can be sed diam nonumy eirmod keeps an
+                        the satriction of whole life that enter.</p>
+                </div>
+            </div>
+            <!--/ col-lg-4 col-md-6 col-sm-12  -->
+        </div>
+        <!--/ row - -->
+    </div>
+    <!--/ Container - -->
+</section>
+<!--   End: Work Flow Section
+==================================================-->
+
+
+
+<!-- Start:  About US  Section
+==================================================-->
+<section class="about-section about_pg_sec">
+    <!-- Container -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <div class="abt_rating">
+                    <h4> 4.9+</h4>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <span> User Rating</span>
+                </div>
+                <!-- /.abt_rating-->
+                <div class="about_img" id="scene">
+                    <img src="images/about.png" alt="image" class="layer" data-depth="0.28">
+                </div>
+                <!-- /.about_img-->
+                <div class="abt_course">
+                    <h4>47K+</h4>
+                    <i class="fa fa-heart"></i>
+                    <i class="fa fa-heart"></i>
+                    <i class="fa fa-heart"></i>
+                    <i class="fa fa-heart"></i>
+                    <i class="fa fa-heart"></i>
+                    <span> Active Courses</span>
+                </div>
+                <!-- /.abt_course-->
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="about_text">
+                    <h3> We Make Your Learning Through Awesome </h3>
+                    <p> Become the dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                        et justo duo dolores et ea rebum. Stet.</p>
+                    <a href="contact.html" class="more-link"> Learn More </a>
+                </div>
+            </div>
+            <!--/ col-md-12  -->
+        </div>
+        <!--/ row - -->
+    </div>
+    <!--/ Container - -->
+</section>
+<!--   End: About US  Section
+==================================================-->
+
+
+<!-- Start: Funfacts Section
+==================================================-->
+<section class="funfacts-section">
+    <!-- Container -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="funfacts_item">
+                    <img src="images/funfact1.png" alt="">
+                    <h2> 2500+ </h2>
+                    <span> Online Courses </span>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="funfacts_item">
+                    <img src="images/funfact2.png" alt="">
+                    <h2> 7000+ </h2>
+                    <span> Students Enrolled </span>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="funfacts_item">
+                    <img src="images/funfact3.png" alt="">
+                    <h2> 340+ </h2>
+                    <span> Expert Instructors </span>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="funfacts_item">
+                    <img src="images/funfact4.png" alt="">
+                    <h2>9000+</h2>
+                    <span> Hours Content</span>
+                </div>
+            </div>
+        </div>
+        <!--/ row - -->
+    </div>
+    <!--/ Container - -->
+</section>
+<!--   End: Funfacts Section
+==================================================-->
+
+
+<!-- Start:  Learners Feedback Section
+==================================================-->
+<section class="lfeedback-section about_pg_lfeedback">
+    <!-- Container -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <div class="lfeedback_img" id="scene2">
+                    <img src="images/feedback.png" alt="image" class="layer" data-depth="0.28">
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12" id="lfeedback_cur">
+                <div class="lfeedback_item">
+                    <!-- Start: Heading -->
+                    <div class="base-header">
+                        <h3> Our Learners Feedback </h3>
+                    </div>
+                    <!-- Best Book Image 1 -->
+                    <div class="lfeedback_text">
+                        <p> It's Had been a fear most experience me that I feel a great
+                            assumption that never thoughts that will happens to But
+                            great provocatives things appropities received without
+                            realmost qualifier that happen that never thoughts that will happens to a fear most
+                            experience. </p>
+                        <h4> David Benjamin </h4>
+                        <h5>Washington, United States</h5>
+                    </div>
+                </div>
+                <div class="lfeedback_item">
+                    <!-- Start: Heading -->
+                    <div class="base-header">
+                        <h3> Our Learners Feedback </h3>
+                    </div>
+                    <!-- Best Book Image 1 -->
+                    <div class="lfeedback_text">
+                        <p> It's Had been a fear most experience me that I feel a great
+                            assumption that never thoughts that will happens to But
+                            great provocatives things appropities received without
+                            realmost qualifier that happen that never thoughts that will happens to a fear most
+                            experience. </p>
+                        <h4> David Benjamin </h4>
+                        <h5>Washington, United States</h5>
+                    </div>
+                </div>
+            </div>
+            <!--/ col-md-12  -->
+        </div>
+        <!--/ row - -->
+    </div>
+    <!--/ Container - -->
+</section>
+<!--   End: Learners Feedback Section
+==================================================-->
+
+
+<!-- Start:  Call to action Section
+==================================================-->
+<section class="cta-section">
+    <!-- Container -->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="cta_wrap">
+                    <div class="cta_text">
+                        <h3> Become An Instructor </h3>
+                        <p> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut labore facts. </p>
+                    </div>
+                    <a href="contact.html" class="more-link"> Join Us Now </a>
+                </div>
+            </div>
+            <!--/ col-md-12  -->
+        </div>
+        <!--/ row - -->
+    </div>
+    <!--/ Container - -->
+</section>
+<!--   End: Call to action Section
+==================================================-->
+
+
+<!-- Start:Footer Section
+==================================================-->
+<section class="newsletter-section pb-130 " hidden>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 col-sm-12">
+            <div class="newsletter_wrap">
+                <!-- Start: Heading -->
+                <div class="base-header">
+                    <h3> Sign Up To Our Newsletter </h3>
+                </div>
+                <span>
+                    Subscribe to our newsletter and get many <br />
+                    interesting things every week
+                </span>
+                <div class="newsletter_form">
+                    <input class="newsletter_field" name="search" id="search_field" type="text"
+                        placeholder="Type your email address" />
+                    <a href="#"> SUBSCRIBE </a>
+                </div>
+                <!-- Best Book Image 1 -->
+            </div>
+        </div>
+    </div>
+    <!-- /. row -->
+</div>
+<!-- /. container -->
+</section>
+<!-- End: Newsletter Section
+==================================================-->
+
+
+
+<!-- Start:Footer Section
+==================================================-->
+<footer class="footertwo-section">
+<div class="container">
+    <div class="row ">
+
+        <!-- Start: logo -->
+        <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-start">
+            <div class="footer_logo">
+                <h5>Info</h5>
+                <ul>
+                    <li>
+                        <a href="">(+971) 545 864 711 </a>
+                    </li>
+                    <li>
+                        <a href="services.html">info@aunaksmarteducation.com</a>
+                    </li>
+                    <li>
+                        <a href="services.html">United Arab Emirates, Dubai Silicon Oasis, HQ Building, Office No. 102</a>
+                    </li>
+                </ul>
+                <div class="footer_socil">
+                    <ul>
+                        <li>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- End: logo -->
+
+        <!-- Start: Quick Link -->
+        <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-start">
+            <div class="foo_widgetquick_lnk">
+                <h5>Category</h5>
+                <ul>
+                    <li>
+                        <a href="courses.html">Privacy & Poilicy</a>
+                    </li>
+                    <li>
+                        <a href="courses.html">Terms & Condition</a>
+                    </li>
+                   
+                    <li>
+                        <a href="courses.html">Support</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- End: Quick Link -->
+
+        <!-- Start: Useful Link -->
+        <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-start">
+            <div class="foo_widgetuseful_lnk">
+                <h5>Useful Links</h5>
+                <ul>
+                    <li>
+                        <a href="courses.html">About Us</a>
+                    </li>
+                    <li>
+                        <a href="courses.html">Contact Us</a>
+                    </li>
+                   
+                    <li>
+                        <a href="courses.html">Courses</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- End: Social Link-->
+
+        <!-- Start: Contact Form -->
+        <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+            <img  src="images/logo.png" alt="">
+            <div class="foo_widget footer_contact_form " hidden>
+                <h5>Send Message</h5>
+                <form method="post" action="mailer.php">
+                    <input class="con-field" name="email" id="email" type="text" placeholder="Your Email">
+                    <textarea class="con-field" name="email" id="message"
+                        placeholder="Your Message"> </textarea>
+                    <input type="submit" id="submit-contact" class="btn-alt" value="Submit">
+                </form>
+            </div>
+        </div>
+        <!-- End: Contact Form-->
+    </div>
+</div>
+<!-- Start:Subfooter -->
+<div class="subfooter">
+    <p> Copyright © 2024 <a href="https://aunak.it/">Aunakit.</a> All rights Reserved.</p>
+</div>
+<!-- End:Subfooter -->
+</footer>
+<!-- End:Footer Section
+========================================-->
+
+<script>
+const locales = ["ar-AE", "en-GB"];
+
+function getFlagSrc(countryCode) {
+return /^[A-Z]{2}$/.test(countryCode)
+? `https://flagsapi.com/${countryCode.toUpperCase()}/shiny/64.png`
+: "";
+}
+
+const dropdownBtn = document.getElementById("dropdown-btn");
+const dropdownContent = document.getElementById("dropdown-content");
+
+function setSelectedLocale(locale) {
+const intlLocale = new Intl.Locale(locale);
+const langName = new Intl.DisplayNames([locale], {
+type: "language",
+}).of(intlLocale.language);
+
+dropdownContent.innerHTML = "";
+
+const otherLocales = locales.filter((loc) => loc !== locale);
+otherLocales.forEach((otherLocale) => {
+const otherIntlLocale = new Intl.Locale(otherLocale);
+const otherLangName = new Intl.DisplayNames([otherLocale], {
+type: "language",
+}).of(otherIntlLocale.language);
+
+const listEl = document.createElement("li");
+listEl.innerHTML = `${otherLangName}<img src="${getFlagSrc(
+otherIntlLocale.region
+)}" />`;
+listEl.value = otherLocale;
+listEl.addEventListener("mousedown", function () {
+setSelectedLocale(otherLocale);
+window.location.href = './ar/index.html';
+});
+dropdownContent.appendChild(listEl);
+});
+
+dropdownBtn.innerHTML = `<img src="${getFlagSrc(
+intlLocale.region
+)}" />${langName}<span class="arrow-down"></span>`;
+}
+
+// Set the default locale to the first one in the list
+setSelectedLocale(locales[1]);
+
+</script>
+<!-- Scripts
+========================================-->
+<!-- jquery -->
+<script src="js/jquery-1.12.4.min.js"></script>
+<!-- plugins -->
+<script src="js/plugins.js"></script>
+<!-- Bootstrap -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+
+
+<!-- Custom Scripts
+========================================-->
+<script src="js/main.js"></script>
+
+</body>
+
+</html>
