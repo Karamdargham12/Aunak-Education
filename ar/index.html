@@ -67,37 +67,42 @@
     .owl-dots {
   right: 0;
 }
-h1,h2,h3,h4,h5,h6,p,li,a{
+#navigation.small-screen .submenu-button{
+    left: 0;
+}
+h1,h2,h3,h4,h5,h6,p,li,a,button{
     font-family: arabic !important;
 }
-.dropdown-lg button {
-  background-color: #253849;
-  min-width: 130px;
-  width: max-content;
-  height: 40px;
-  border-radius: 5px;
-  color: white;
-  padding: 10px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-  justify-content: space-evenly;
-}
-.dropdown-lg button img {
-  margin: 0 5px 0 0;
-}
-.dropdown-lg button img,
-.dropdown-content li img {
-  width: 28px;
-}
-.dropdown-lg button,
-.dropdown-content li {
-    font-family: arabic !important;
-  display: flex;
-  align-items: center;
-  font-size: 14px;
-  font-weight: 500;
-}
+.dropdown button {
+      background-color: #253849;
+      min-width: 130px;
+      width: max-content;
+      height: 40px;
+      border-radius: 5px;
+      color: white;
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      justify-content: space-evenly;
+    }
+    .dropdown button img {
+      margin: 0 5px 0 0;
+    }
+    .dropdown button img,
+    .dropdown-content li img {
+      width: 28px;
+    }
+    .dropdown button,
+    .dropdown-content li {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .sticky-wrapper{
+        background-color: #EAF1ED;
+    }
 .arrow-down {
   width: 0;
   height: 0;
@@ -109,73 +114,81 @@ h1,h2,h3,h4,h5,h6,p,li,a{
   margin: 0 0 0 5px;
 }
 
-.dropdown-lg button:hover {
-  cursor: pointer;
-  background-color: #3c5b77;
-}
-/* Style for the dropdown content */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  margin: 1px 0 0 0;
-  padding: 0;
-  background-color: #f5f5f5;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  border-radius: 5px;
-  overflow-y: scroll;
-  max-height: 315px;
-}
-/* Style for the dropdown content items */
-.dropdown-content li {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  justify-content: end;
-}
-.dropdown-content li img {
-  margin: 0 20px 0px 20px;
-}
-/* Style for the dropdown content items on hover */
-.dropdown-content li:hover {
-  background-color: #f1f1f1;
-  cursor: pointer;
-  color: blue;
-  border-radius: 5px;
-}
-/* Show the dropdown content when the dropdown button is clicked */
-.dropdown-lg:focus-within .dropdown-content {
-  display: block;
-}
-/* Animate the dropdown content */
-@keyframes slideIn {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-.dropdown-content {
-  animation: slideIn 0.3s ease-out;
-}
-/* Scrollbar styles */
-::-webkit-scrollbar {
-  width: 8px;
-  height: 10px;
-}
-::-webkit-scrollbar-thumb {
-  border-radius: 8px;
-  background: #c2c9d2;
-}
-@media (max-width:1200px) {
-    .dropdown-lg button {
- display: none;
-}
-}
+
+.dropdown button:hover {
+      cursor: pointer;
+      background-color: #3c5b77;
+    }
+    /* Style for the dropdown content */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      margin: 1px 0 0 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      border-radius: 5px;
+      overflow-y: scroll;
+      max-height: 315px;
+    }
+    /* Style for the dropdown content items */
+    .dropdown-content li {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      justify-content: end;
+    }
+    .dropdown-content li img {
+      margin: 0 20px 0px 20px;
+    }
+    /* Style for the dropdown content items on hover */
+    .dropdown-content li:hover {
+      background-color: #f1f1f1;
+      cursor: pointer;
+      color: blue;
+      border-radius: 5px;
+    }
+    /* Show the dropdown content when the dropdown button is clicked */
+    .dropdown:focus-within .dropdown-content {
+      display: block;
+    }
+    /* Animate the dropdown content */
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .dropdown-content {
+      animation: slideIn 0.3s ease-out;
+    }
+    /* Scrollbar styles */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 10px;
+    }
+    ::-webkit-scrollbar-thumb {
+      border-radius: 8px;
+      background: #c2c9d2;
+    }
+    @media (max-width:992px) {
+        #dropdown-btn{
+            display: none;
+        }
+        #navigation>ul>li.has-sub>a, #navigation>ul>li>a{
+            text-align: right;
+            padding: 17px 20px 17px 0px;
+        }
+        #navigation.small-screen #menu-button:before{
+            
+        }
+    }
 </style>
 </head>
 
@@ -189,10 +202,10 @@ h1,h2,h3,h4,h5,h6,p,li,a{
 ==================================================-->
     <div class="navigation navigation_two">
         <div class="container" dir="rtl">
-            <div class="dropdown-lg" id="dropdown" dir="ltr" tab-index="0">
+            <div class="dropdown" id="dropdown" dir="ltr" tab-index="0">
                 <button id="dropdown-btn"></button>
                 <ul class="dropdown-content" id="dropdown-content"></ul>
-              </div>
+                </div>
             <div id="navigation" class="menu-wrap">
                 <ul  dir="ltr">
                     <li><a href="#">تواصل</a></li>
@@ -235,6 +248,9 @@ h1,h2,h3,h4,h5,h6,p,li,a{
                     </li>
                     <li><a href="#">حول</a></li>
                     <li class="active has-sub"><a href="index.html">الرئيسية</a>
+
+                    </li>
+                    <li class="active lang"><a href="../index.html">تغيير اللغة</a>
 
                     </li>
                 </ul>
@@ -761,7 +777,9 @@ function getFlagSrc(countryCode) {
 }
 
 const dropdownBtn = document.getElementById("dropdown-btn");
+const dropdownBtn2 = document.getElementById("dropdown-btn2");
 const dropdownContent = document.getElementById("dropdown-content");
+const dropdownContent2 = document.getElementById("dropdown-content2");
 
 function setSelectedLocale(locale) {
   const intlLocale = new Intl.Locale(locale);
