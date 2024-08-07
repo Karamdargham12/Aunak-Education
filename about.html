@@ -184,10 +184,10 @@
             </div>
             <div id="navigation" class="menu-wrap">
                 <ul>
-                    <li class="active has-sub"><a href="index.html">Home</a>
+                    <li><a href="index.html">Home</a>
 
                     </li>
-                    <li><a href="#">About</a></li>
+                    <li class="active"><a href="#">About</a></li>
                     <li class="has-sub"><a href="#">Pages</a>
                        <!--  <ul>
                             <li><a href="course-category.html">Course Category</a> </li>
@@ -203,7 +203,7 @@
                             <li><a href="404.html">404 Page</a> </li>
                         </ul> --> 
                     </li>
-                    <li class="has-sub"><a href="#"> Courses</a>
+                    <li ><a href="#"> Courses</a>
                         <!--
 <ul>
                             <li><a href="course-category.html">Course Category</a> </li>
@@ -212,7 +212,7 @@
                         </ul>
                         -->   
                     </li>
-                    <li class="has-sub"><a href="#">Blog</a>
+                    <li><a href="#">Blog</a>
 
                         <!--
    <ul>
@@ -668,7 +668,7 @@ listEl.innerHTML = `${otherLangName}<img src="${getFlagSrc(
 listEl.value = otherLocale;
 listEl.addEventListener("mousedown", function () {
   setSelectedLocale(otherLocale);
-  window.location.href = './ar/index.html';
+  window.location.href = './ar/about.html';
 });
 dropdownContent.appendChild(listEl);
 });
