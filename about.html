@@ -58,114 +58,118 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <style>
-    .feature-category p{
-        text-align: right !important;
-    }
-        .owl-dots {
-      right: 0;
-    }
-    .dropdown button {
-      background-color: #253849;
-      min-width: 130px;
-      width: max-content;
-      height: 40px;
-      border-radius: 5px;
-      color: white;
-      padding: 10px;
-      font-size: 16px;
-      border: none;
-      cursor: pointer;
-      justify-content: space-evenly;
-    }
-    .dropdown button img {
-      margin: 0 5px 0 0;
-    }
-    .dropdown button img,
-    .dropdown-content li img {
-      width: 28px;
-    }
-    .dropdown button,
-    .dropdown-content li {
-      display: flex;
-      align-items: center;
-      font-size: 14px;
-      font-weight: 500;
-    }
-    .arrow-down {
-      width: 0;
-      height: 0;
-      display: inline-block;
-      vertical-align: middle;
-      border-style: solid;
-      border-width: 4px 4px 0 4px;
-      border-color: #fff transparent transparent transparent;
-      margin: 0 0 0 5px;
-    }
-    
-    .dropdown button:hover {
-      cursor: pointer;
-      background-color: #3c5b77;
-    }
-    /* Style for the dropdown content */
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      margin: 1px 0 0 0;
-      padding: 0;
-      background-color: #f5f5f5;
-      min-width: 160px;
-      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-      z-index: 1;
-      border-radius: 5px;
-      overflow-y: scroll;
-      max-height: 315px;
-    }
-    /* Style for the dropdown content items */
-    .dropdown-content li {
-      color: black;
-      padding: 12px 16px;
-      text-decoration: none;
-      justify-content: end;
-    }
-    .dropdown-content li img {
-      margin: 0 20px 0px 20px;
-    }
-    /* Style for the dropdown content items on hover */
-    .dropdown-content li:hover {
-      background-color: #f1f1f1;
-      cursor: pointer;
-      color: blue;
-      border-radius: 5px;
-    }
-    /* Show the dropdown content when the dropdown button is clicked */
-    .dropdown:focus-within .dropdown-content {
-      display: block;
-    }
-    /* Animate the dropdown content */
-    @keyframes slideIn {
-      from {
-        opacity: 0;
-        transform: translateY(-10px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-    .dropdown-content {
-      animation: slideIn 0.3s ease-out;
-    }
-    /* Scrollbar styles */
-    ::-webkit-scrollbar {
-      width: 8px;
-      height: 10px;
-    }
-    ::-webkit-scrollbar-thumb {
-      border-radius: 8px;
-      background: #c2c9d2;
-    }
-    
-    </style>
+        .feature-category p{
+            text-align: right !important;
+        }
+            .owl-dots {
+          right: 0;
+        }
+        .dropdown button {
+          background-color: #253849;
+          min-width: 130px;
+          width: max-content;
+          height: 40px;
+          border-radius: 5px;
+          color: white;
+          padding: 10px;
+          font-size: 16px;
+          border: none;
+          cursor: pointer;
+          justify-content: space-evenly;
+        }
+        .dropdown button img {
+          margin: 0 5px 0 0;
+        }
+        .dropdown button img,
+        .dropdown-content li img {
+          width: 28px;
+        }
+        .dropdown button,
+        .dropdown-content li {
+          display: flex;
+          align-items: center;
+          font-size: 14px;
+          font-weight: 500;
+        }
+        .arrow-down {
+          width: 0;
+          height: 0;
+          display: inline-block;
+          vertical-align: middle;
+          border-style: solid;
+          border-width: 4px 4px 0 4px;
+          border-color: #fff transparent transparent transparent;
+          margin: 0 0 0 5px;
+        }
+        
+        .dropdown button:hover {
+          cursor: pointer;
+          background-color: #3c5b77;
+        }
+        /* Style for the dropdown content */
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          margin: 1px 0 0 0;
+          padding: 0;
+          background-color: #f5f5f5;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          z-index: 1;
+          border-radius: 5px;
+          overflow-y: scroll;
+          max-height: 315px;
+        }
+        /* Style for the dropdown content items */
+        .dropdown-content li {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          justify-content: end;
+        }
+        .dropdown-content li img {
+          margin: 0 20px 0px 20px;
+        }
+        /* Style for the dropdown content items on hover */
+        .dropdown-content li:hover {
+          background-color: #f1f1f1;
+          cursor: pointer;
+          color: blue;
+          border-radius: 5px;
+        }
+        /* Show the dropdown content when the dropdown button is clicked */
+        .dropdown:focus-within .dropdown-content {
+          display: block;
+        }
+        /* Animate the dropdown content */
+        @keyframes slideIn {
+          from {
+            opacity: 0;
+            transform: translateY(-10px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        .dropdown-content {
+          animation: slideIn 0.3s ease-out;
+        }
+        /* Scrollbar styles */
+        ::-webkit-scrollbar {
+          width: 8px;
+          height: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+          border-radius: 8px;
+          background: #c2c9d2;
+        }
+        @media (max-width:992px) {
+            #dropdown-btn{
+                display: none;
+            }
+        }
+        </style>
 </head>
 
 <body>
@@ -176,76 +180,78 @@
 
     <!-- Start: Header Section
 ==================================================-->
-    <div class="navigation navigation_two">
-        <div class="container">
-            <div class="logo">
-                <a href="index.html"><img class="img-responsive" src="images/logo.png" style="width: 100%;" alt="">
-                </a>
-            </div>
-            <div id="navigation" class="menu-wrap">
-                <ul>
-                    <li><a href="index.html">Home</a>
-
-                    </li>
-                    <li class="active"><a href="#">About</a></li>
-                    <li class="has-sub"><a href="#">Pages</a>
-                       <!--  <ul>
-                            <li><a href="course-category.html">Course Category</a> </li>
-                            <li><a href="courses.html">Our Course</a> </li>
-                            <li><a href="single-course.html">Course Details</a> </li>
-                            <li><a href="login.html">Login Page</a> </li>
-                            <li><a href="register.html">Register Page</a> </li>
-                            <li><a href="teachers.html">Instructor Page</a> </li>
-                            <li><a href="single-teacher.html">Instructor Details</a> </li>
-                            <li><a href="events.html">Event Page</a> </li>
-                            <li><a href="single-event.html">Event Details</a> </li>
-                            <li><a href="gallery.html">Gallery Page</a> </li>
-                            <li><a href="404.html">404 Page</a> </li>
-                        </ul> --> 
-                    </li>
-                    <li ><a href="#"> Courses</a>
-                        <!--
-<ul>
-                            <li><a href="course-category.html">Course Category</a> </li>
-                            <li><a href="courses.html">Our Course</a> </li>
-                            <li><a href="single-course.html">Course Details</a> </li>
-                        </ul>
-                        -->   
-                    </li>
-                    <li><a href="#">Blog</a>
-
-                        <!--
-   <ul>
-                            <li><a href="blog.html">Blog One</a> </li>
-                            <li><a href="single-blog.html">Blog Details</a> </li>
-                            <li><a href="events.html">Event Page</a> </li>
-                            <li><a href="single-event.html">Event Details</a> </li>
-                        </ul>
-                    </li>
-                        -->
-                     
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-            <!-- End: navigation  -->
-            <div class="header_sign" hidden>
-                <a href="#" class="more-link"> Sign in</a>
-            </div>
-
-    <div class="dropdown " id="dropdown" dir="ltr" tab-index="0">
-        <button id="dropdown-btn"></button>
-        <ul class="dropdown-content" id="dropdown-content"></ul>
-      </div>
-
-               
-   
-            
-            <!-- End: Sign in -->
+<div class="navigation navigation_two" style="position: relative !important;">
+    <div class="container">
+        <div class="logo">
+            <a href="index.html"><img class="img-responsive" src="images/logo.png" style="width: 100%;" alt="">
+            </a>
         </div>
-        <!--/ container -->
-     
+        <div id="navigation" class="menu-wrap">
+            <ul>
+                <li><a href="index.html">Home</a>
+
+                </li>
+                <li class="active"><a href="./about.html">About</a></li>
+                <li class="has-sub"><a href="#">Pages</a>
+                   <!--  <ul>
+                        <li><a href="course-category.html">Course Category</a> </li>
+                        <li><a href="courses.html">Our Course</a> </li>
+                        <li><a href="single-course.html">Course Details</a> </li>
+                        <li><a href="login.html">Login Page</a> </li>
+                        <li><a href="register.html">Register Page</a> </li>
+                        <li><a href="teachers.html">Instructor Page</a> </li>
+                        <li><a href="single-teacher.html">Instructor Details</a> </li>
+                        <li><a href="events.html">Event Page</a> </li>
+                        <li><a href="single-event.html">Event Details</a> </li>
+                        <li><a href="gallery.html">Gallery Page</a> </li>
+                        <li><a href="404.html">404 Page</a> </li>
+                    </ul> --> 
+                </li>
+                <li ><a href="#"> Courses</a>
+                    <!--
+<ul>
+                        <li><a href="course-category.html">Course Category</a> </li>
+                        <li><a href="courses.html">Our Course</a> </li>
+                        <li><a href="single-course.html">Course Details</a> </li>
+                    </ul>
+                    -->   
+                </li>
+                <li ><a href="#">Blog</a>
+
+                    <!--
+<ul>
+                        <li><a href="blog.html">Blog One</a> </li>
+                        <li><a href="single-blog.html">Blog Details</a> </li>
+                        <li><a href="events.html">Event Page</a> </li>
+                        <li><a href="single-event.html">Event Details</a> </li>
+                    </ul>
+                </li>
+                    -->
+                 
+                <li><a href="#">Contact</a></li>
+                <li class="active lang"><a href="./ar/about.html"><img src="./images/united-arab-emirates.png" style="width: 12%;"></a>
+
+                </li>
+            </ul>
+        </div>
+        <!-- End: navigation  -->
+        <div class="header_sign" hidden>
+            <a href="#" class="more-link"> Sign in</a>
+        </div>
+
+<div class="dropdown " id="dropdown" dir="ltr" tab-index="0">
+    <button id="dropdown-btn"></button>
+    <ul class="dropdown-content" id="dropdown-content"></ul>
+  </div>
+
+           
+
+        
+        <!-- End: Sign in -->
     </div>
-    <!-- End: header navigation -->
+    <!--/ container -->
+ 
+</div>
 
 
     <!-- header -->
