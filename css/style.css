@@ -2272,13 +2272,14 @@ footer ul li {
   text-align: center;
   color: #fff;
   height: 700px;
-  background: transparent url("../images/header.jpg");
+  background: transparent url("../images/books.gif");
   color: #FFF;
   box-sizing: border-box;
   height: 340px;
+  background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  background-size: cover;
+  background-size:50% 400px ;
   position: relative;
 }
 

@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]> <!-->
+<html lang="zxx">
+<!--
+<![endif]-->
+
+<head>
+    <!-- TITLE OF SITE -->
+    <title>عونك للخدمات التعليمية</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Smart Education Technology" />
+    <meta name="keywords"
+        content="Aunak Smart Education, Education, Learning, one page, multipage, responsive, courses," />
+    <meta name="author" content="AunakIT">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Favicons --> 
+    <link rel="apple-touch-icon" sizes="152x152" href="../images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="../images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <!-- CSS Begins 
+================================================== -->
+    <!--Animate Effect-->
+    <link href="../css/animate.css" rel="stylesheet">
+    <link href="../css/hover.css" rel="stylesheet">
+
+    <!-- For Image Preview -->
+    <link rel="stylesheet" href="../css/magnific-popup.css">
+
+    <!--Owl Carousel -->
+    <link href="../css/owl.carousel.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/slick.css">
+
+    <!--BootStrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/normalize.css" rel="stylesheet">
+
+    <!-- Main Style -->
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/responsive.css" rel="stylesheet">
+    
+
+
+    <!--[if IE]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<style>
+    @font-face {
+  font-family: arabic;
+  src: url(../fonts/arabic.ttf);
+}
+.feature-category p{
+    text-align: right !important;
+}
+    .owl-dots {
+  right: 0;
+}
+#navigation.small-screen .submenu-button{
+    left: 0;
+}
+h1,h2,h3,h4,h5,h6,p,li,a,button{
+    font-family: arabic !important;
+}
+.dropdown button {
+      background-color: #253849;
+      min-width: 130px;
+      width: max-content;
+      height: 40px;
+      border-radius: 5px;
+      color: white;
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      justify-content: space-evenly;
+    }
+    .dropdown button img {
+      margin: 0 5px 0 0;
+    }
+    .dropdown button img,
+    .dropdown-content li img {
+      width: 28px;
+    }
+    .dropdown button,
+    .dropdown-content li {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .sticky-wrapper{
+        background-color: #EAF1ED;
+    }
+.arrow-down {
+  width: 0;
+  height: 0;
+  display: inline-block;
+  vertical-align: middle;
+  border-style: solid;
+  border-width: 4px 4px 0 4px;
+  border-color: #fff transparent transparent transparent;
+  margin: 0 0 0 5px;
+}
+
+
+.dropdown button:hover {
+      cursor: pointer;
+      background-color: #3c5b77;
+    }
+    /* Style for the dropdown content */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      margin: 1px 0 0 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      border-radius: 5px;
+      overflow-y: scroll;
+      max-height: 315px;
+    }
+    /* Style for the dropdown content items */
+    .dropdown-content li {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      justify-content: end;
+    }
+    .dropdown-content li img {
+      margin: 0 20px 0px 20px;
+    }
+    /* Style for the dropdown content items on hover */
+    .dropdown-content li:hover {
+      background-color: #f1f1f1;
+      cursor: pointer;
+      color: blue;
+      border-radius: 5px;
+    }
+    /* Show the dropdown content when the dropdown button is clicked */
+    .dropdown:focus-within .dropdown-content {
+      display: block;
+    }
+    /* Animate the dropdown content */
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .dropdown-content {
+      animation: slideIn 0.3s ease-out;
+    }
+    /* Scrollbar styles */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 10px;
+    }
+    ::-webkit-scrollbar-thumb {
+      border-radius: 8px;
+      background: #c2c9d2;
+    }
+    @media (max-width:992px) {
+        #dropdown-btn{
+            display: none;
+        }
+        #navigation>ul>li.has-sub>a, #navigation>ul>li>a{
+            text-align: right;
+            padding: 17px 20px 17px 0px;
+        }
+        #navigation.small-screen #menu-button:before{
+            
+        }
+    }
+</style>
+</head>
+
+<body style="font-family: arabic !important;">
+
+    <!-- ::::::::::::::::::::::::::: Start: Preloader section ::::::::::::::::::::::::::: -->
+    <div id="preloader"></div>
+    <!-- ::::::::::::::::::::::::::: End: Preloader section ::::::::::::::::::::::::::: -->
+
+    <!-- Start: Header Section
+==================================================-->
+    <div class="navigation navigation_two"  style="position: relative !important;">
+        <div class="container" dir="rtl">
+            <div class="dropdown" id="dropdown" dir="ltr" tab-index="0">
+                <button id="dropdown-btn"></button>
+                <ul class="dropdown-content" id="dropdown-content"></ul>
+                </div>
+            <div id="navigation" class="menu-wrap">
+                <ul  dir="ltr">
+                    <li><a href="#">تواصل</a></li>
+                    <li><a href="#">منتدى</a>
+                        <!--
+                        <ul>
+                            <li><a href="blog.html">Blog One</a> </li>
+                            <li><a href="single-blog.html">Blog Details</a> </li>
+                            <li><a href="events.html">Event Page</a> </li>
+                            <li><a href="single-event.html">Event Details</a> </li>
+                        </ul>
+                    -->
+                    </li>
+                   <li ><a href="#">الدورات</a>
+                    <!--
+                     <ul>
+                            <li><a href="course-category.html">Course Category</a> </li>
+                            <li><a href="courses.html">Our Course</a> </li>
+                            <li><a href="single-course.html">Course Details</a> </li>
+                        </ul>
+                    -->
+                       
+                    </li>
+                    <li class="has-sub"><a href="#">الصفحات</a>
+                        <!--
+                        <ul>
+                            <li><a href="course-category.html">Course Category</a> </li>
+                            <li><a href="courses.html">Our Course</a> </li>
+                            <li><a href="single-course.html">Course Details</a> </li>
+                            <li><a href="login.html">Login Page</a> </li>
+                            <li><a href="register.html">Register Page</a> </li>
+                            <li><a href="teachers.html">Instructor Page</a> </li>
+                            <li><a href="single-teacher.html">Instructor Details</a> </li>
+                            <li><a href="events.html">Event Page</a> </li>
+                            <li><a href="single-event.html">Event Details</a> </li>
+                            <li><a href="gallery.html">Gallery Page</a> </li>
+                            <li><a href="404.html">404 Page</a> </li>
+                        </ul>
+                    -->
+                    </li>
+                    <li><a href="./about.html">حول</a></li>
+                    <li class="active"><a href="./index.html">الرئيسية</a>
+
+                    </li>
+                    <li class="active lang"><a href="../index.html"><img src="../images/united-states.png" style="width: 12%;"></a>
+
+                    </li>
+                </ul>
+            </div>
+            <div class="logo">
+                <a href="./index.html"><img class="img-responsive" src="../images/logo-ar.png" style="width: 100%;" alt="">
+                </a>
+            </div>
+            <!-- End: navigation  -->
+            <div class="header_sign" hidden>
+                <a href="#" class="more-link"> Sign in</a>
+            </div>
+            <!-- End: Sign in -->
+        </div>
+        <!--/ container -->
+    </div>
+    <!-- End: header navigation
+==================================================-->
+
+
+    <!-- Start: Hero Section
+==================================================-->
+
+<header class="single-header">
+    <!-- Start: Header Content -->
+    <div class="container">
+        <div class="row text-center wow fadeInUp" data-wow-delay="0.5s">
+            <div class="col-sm-12">
+                <!-- Headline Goes Here -->
+                <h3>Contact Us</h3>
+                <h4><a href="index.html"> Home </a> <span> &vert; </span> Contact </h4>
+            </div>
+        </div>
+        <!-- End: .row -->
+    </div>
+    <!-- End: Header Content -->
+</header>
+<section class="about-section" dir="rtl">
+    <!-- Container -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <div class="about_text">
+                    <h3>علاقات مع دول متطورة في التعليم وأهمها اليابان</h3>
+                    <p>
+                        تسعى عونك من خلال هذه المبادرة إلى دمج أفضل الممارسات التعليمية العالمية مع خبرتها الواسعة في مجال التعليم الإلكتروني، لتقديم تجربة تعلّم فريدة تُلبي احتياجات الطلاب في كافة المراحل الدراسية في مختلف أنحاء العالم.
+
+                        تأتي هذه الشراكة استلهاماً من النموذج التعليمي الياباني المتميز، الذي يُولي أهمية كبيرة للابتكار والتفكير الإبداعي، ويُركز على تنمية مهارات القرن الحادي والعشرين لدى الطلاب. </p>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <!-- /.abt_rating-->
+                <div class="about_img" id="scene2">
+                    <img src="" alt="image" class="layer" data-depth="0.28">
+                </div>
+                <!-- /.about_img-->
+                <!-- /.abt_course-->
+            </div>
+            <!--/ col-md-12  -->
+        </div>
+        <!--/ row - -->
+    </div>
+    <!--/ Container - -->
+</section>
+<section class="about-section" dir="rtl">
+<div class="blog_container">
+    <div class="container">
+        <div class="row">
+            <!-- Blog Area -->
+            <div class="col-lg-8 col-sm-12 blog-area">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="blog_wrp">
+                           
+                                <h4>جامعة تشوكيو العريقة</h4>
+                          
+                            <div class="blog_meta">
+                                <span>المتحف الافتراضي</span>                          
+                            </div>
+                            <p>في شراكة استثنائية مع جامعة تشوكيو اليابانية، حققت عونك للتعليم الذكي إنجازاً جديداً يضاف إلى سجلها الحافل. فقد أتاحت الفرصة لثمانين طالب من طلاب المدرسة السورية الذكية الافتراضية لعرض لوحاتهم الفنية الافتراضية في (متحف سوريا الافتراضي) التابع للجامعة، ليكونوا بذلك أول فنانين عرب يشاركون في هذا المعرض الافتراضي المرموق. هذا التعاون المشترك يؤكد على أهمية تبادل الخبرات والمعارف بين الثقافات المختلفة، ويساهم في تعزيز مكانة التعليم العربي على الساحة العالمية
+                            </p>
+                          
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="blog_wrp">
+                          <h4> المشاركة بمنتدى الشباب العالمي</h4>
+                            <p>في إطار سعيها الدائم إلى بناء جسور التواصل بين الثقافات، ومن خلال علاقاتها مع جامعة تشوكيو، اختارت شركة عونك للتعليم الذكي وفداً من الطلاب الأوائل على مستوى المدرسة السورية الذكية الافتراضية للمشاركة في منتدى الشباب العالمي السنوي المقام بجامعة تشوكيو، وقد كانت هذه المشاركة فرصة ثمينة للطلاب للتفاعل مع شباب من مختلف الجنسيات وتبادل الخبرات والمعارف، وتعزيز ثقافة الحوار والاحترام المتبادل. كما ساهم المنتدى في تعزيز صورة الشباب العربي المبدع والمبتكر بحصول المدرسة على المرتبة الذهبية كأفضل عرض تم تقديمه.
+                                "يذكر أنها المرة الأولى التي تشارك فيها دولة عربية بهذا المؤتمر"
+                            </p>
+                          
+                        </div>
+                    </div>
+               
+                </div>
+            </div>
+        </section>
+
+        <section  class="about-section" dir="rtl">
+            <!-- Container -->
+            <div class="container">
+                <!-- Start: Heading -->
+                <div class="base-header text-center">
+                    <h3> شركة Liebe </h3>
+                </div>
+                <div class="base-header text-center">
+                    <h3>والتي تقدم برامج دعم الطفولة المبكرة ابتداءً من عمر 4 سنوات عن طريق</h3>
+                </div>
+                <!-- End: Heading -->
+                <div class="row">
+                    <div class="col-lg-12 col-md-6 col-sm-12">
+                        <!-- category 1 -->
+                        <div class="workflow_item">
+                            <p>منح الأطفال آفاق جديدة من التعلم والإبداع</p>
+                        </div>
+                    </div>
+                    <!--/ col-lg-4 col-md-6 col-sm-12  -->
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <!-- category 1 -->
+                        <div class="workflow_item">
+                            <p>تحفيز الفضول وحرية التعبير والاستكشاف</p>
+                        </div>
+                    </div>
+                    <!--/ col-lg-4 col-md-6 col-sm-12  -->
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <!-- category 1 -->
+                        <div class="workflow_item">
+                            <p>مناهج تعليمية تدعم الحس الإبداعي بطرق عصريّة</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-6 col-sm-12">
+                        <!-- category 1 -->
+                        <div class="workflow_item">
+                            <p> 	برامج يابانية متخصصة في تطوير تكوين الطفل من النواحي الذهنية البدنية الأكاديمية والاجتماعية تحت إشراف خبراء يابانيين</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <!-- category 1 -->
+                        <div class="workflow_item">
+                            <p>	برامج مبتكرة لتقديم المعالجة النفسية والاجتماعية للأطفال</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <!-- category 1 -->
+                        <div class="workflow_item">
+                            <p>دمج الأطفال ذوي القدرات الخاصة مع الطلاب من خلال برامج تأهيلية وترفيهية</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-6 col-sm-12">
+                        <!-- category 1 -->
+                        <div class="workflow_item">
+                            <p>تقديم الدعم النفسي والوجداني</p>
+                        </div>
+                    </div>
+                    <!--/ col-lg-4 col-md-6 col-sm-12  -->
+                </div>
+                <!--/ row - -->
+            </div>
+            <!--/ Container - -->
+        </section>
+        <section class="about-section" dir="rtl">
+            <div class="blog_container">
+                <div class="container">
+                    <div class="row">
+                        <!-- Blog Area -->
+                        <div class="col-lg-8 col-sm-12 blog-area">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="blog_wrp">
+                                       
+                                            <h4>برامج الوعي الدولي International Awareness</h4>
+                                      
+                                        <div class="blog_meta">
+                                            <span> يسعى البرنامج إلى تعزيز الوعي الدولي من خلال التدريب والتمكين للمشاركة الفعالة في بيئات لغوية وثقافية متنوعة عن طريق برامج مقدمة للطلاب المسافرين إلى دول جديدة، ليتم توجيههم إلى العديد من الأمور الهامة، مثل لغة البلاد، تنوعها الثقافي وعاداتها وتقاليدها.</span>                          
+                                        </div>
+                                        <p>في شراكة استثنائية مع جامعة تشوكيو اليابانية، حققت عونك للتعليم الذكي إنجازاً جديداً يضاف إلى سجلها الحافل. فقد أتاحت الفرصة لثمانين طالب من طلاب المدرسة السورية الذكية الافتراضية لعرض لوحاتهم الفنية الافتراضية في (متحف سوريا الافتراضي) التابع للجامعة، ليكونوا بذلك أول فنانين عرب يشاركون في هذا المعرض الافتراضي المرموق. هذا التعاون المشترك يؤكد على أهمية تبادل الخبرات والمعارف بين الثقافات المختلفة، ويساهم في تعزيز مكانة التعليم العربي على الساحة العالمية
+                                        </p>
+                                      
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="blog_wrp">
+                                      <h4>المونتيسوري</h4>
+                                        <p> 
+                                            نستلهم من منهاج مونتيسوري في عونك التعليمية لنقوم بتفضيل الأساليب التعليمية التي تتضمن اهتمامات وأنشطة الأطفال الطبيعية بدلاً من أساليب التدريس الرسمية، ونوفر بيئة تعلم محفزة تسمح لهم باستكشاف الأفكار الجديدة، وتجربة حل المشكلات، وتطوير مشاريع مبتكرة تساهم في حل التحديات المجتمعية، ليكونوا متعلمين مستقلين قادرين على اكتشاف اهتماماتهم وتطوير معرفتهم بشكل ذاتي.
+                                        </p>
+                                      
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="blog_wrp">
+                                      <h4>ذوو الهمم جزء أساسي من العملية التعليمية</h4>
+                                        <p> 
+                                            نؤمن نحن في عونك للتعليم الذكي والتكنولوجيا إيماناً راسخاً بأن جميع الطلاب، بمن فيهم ذوو الهمم، يشكلون ركيزة أساسية لنجاح العملية التعليمية. كما نسعى جاهدين لبناء بيئة تعليمية شاملة وداعمة، حيث يتعاون جميع المعلمين والطلاب وأولياء الأمور لضمان حصول كل فرد على فرص متساوية للتعلم والنمو.
+                                        </p>
+                                      
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="blog_wrp">
+                                      <h4>تدريب المدرسين على التعامل مع برامج ذوي الهمم</h4>
+                                        <p> 
+                                            تطوير وتنفيذ هذه البرامج يتطلب تضافر الجهود بين المعلمين، الأخصائيين النفسيين، والأخصائيين الاجتماعيين، لضمان توفير بيئة تعليمية داعمة ومتكاملة للطلاب من ذوي الاحتياجات الخاصة.
+                                            لذلك تسعى عونك التعليمية لتوفير مدرسين أخصائيين مدربين تدريباً أكاديمياً عالمياً للتعامل مع جميع الاحتياجات المطلوبة.
+                                        </p>
+                                      
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="blog_wrp">
+                                      <h4>مدرسي الظل</h4>
+                                        <p> 
+                                            برامج shadow teacher هي مبادرات تعليمية تهدف إلى توفير دعم فردي مكثف للطلاب الذين يحتاجون إلى مساعدة إضافية لتحقيق أقصى استفادة من العملية التعليمية. يرافقه في صفه الدراسي، ويوفر له الدعم والتوجيه اللازمين، سواء كان ذلك في فهم المادة الدراسية، أو في تطوير مهاراته الاجتماعية، أو في إدارة سلوكه.
+                                        </p>
+                                      
+                                    </div>
+                                </div>
+                           
+                            </div>
+                        </div>
+                    </section>
+
+    <!-- End: Hero Section
+==================================================-->
+
+
+    <!-- Start: Work Flow Section
+==================================================-->
+
+    <!--   End: Work Flow Section
+==================================================-->
+
+
+
+    <!-- Start:  About US  Section
+==================================================-->
+    
+    <!--   End: About US  Section
+==================================================-->
+
+
+    <!-- Start: Popular Categories Section
+==================================================-->
+
+    <!--   End: Popular Categories Section
+==================================================-->
+
+
+
+    <!-- Start: Featured Courses Section
+==================================================-->
+<section class="feat-course-section" dir="rtl">
+    <div class="container">
+        <!-- Start: Heading -->
+        <div class="base-header">
+            <h3>برامج دعم الطلاب من ذوي الهمم</h3>
+        </div>
+        <!-- End: Heading -->
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 mt-lg-0 mt-2">
+                <div class="feat_course_item">
+                    <img src="../images/11-01.jpg" alt="image"hidden>
+                    <div class="feat_cour_price">
+                        <span class="feat_cour_tag">البرامج التعليمية الفردية</span>
+                        
+                    </div>
+                    <h4 class="feat_cour_tit">يتم تطوير البرامج التعليمية الفردية من قبل فريق متعدد التخصصات، ويشمل أهدافاً تعليمية محددة، وخدمات الدعم المطلوبة، وأساليب التقييم المناسبة.</h4>
+
+                </div>
+            </div>
+            <!-- /. col-lg-4 col-md-6 col-sm-12-->
+
+            <div class="col-lg-4 col-md-6 col-sm-12 mt-lg-0 mt-2">
+                <div class="feat_course_item">
+                    <img src="../images/12-01.jpg" alt="image"hidden>
+                    <div class="feat_cour_price">
+                        <span class="feat_cour_tag"> برامج الدمج</span>
+                    </div>
+                    <h4 class="feat_cour_tit">
+                        تهدف برامج الدمج إلى إدماج الطلاب ذوي الهمم في الفصول الدراسية العادية مع توفير دعم إضافي. قد يشمل هذا الدعم معلم ظل، أو مساعد تدريس، أو تعديلات في المناهج الدراسية.</h4>
+                </div>
+            </div>
+            <!-- /. col-lg-4 col-md-6 col-sm-12-->
+
+            <div class="col-lg-4 col-md-6 col-sm-12 mt-lg-0 mt-2">
+                <div class="feat_course_item">
+                    <img src="../images/13-01.jpg" alt="image"hidden>
+                    <div class="feat_cour_price">
+                        <span class="feat_cour_tag">الفصول الخاصة</span>
+              
+                    </div>
+                    <h4 class="feat_cour_tit"> هذه الفصول مخصصة للطلاب الذين يحتاجون إلى بيئة تعليمية منفصلة بسبب احتياجاتهم الخاصة.</h4>
+                  
+                </div>
+            </div>
+            <!-- /. col-lg-4 col-md-6 col-sm-12-->
+
+            <div class="col-lg-4 col-md-6 col-sm-12 mt-lg-5 mt-2">
+                <div class="feat_course_item">
+                    <img src="../images/tt-01-01.jpg" alt="image "hidden>
+                    <div class="feat_cour_price">
+                        <span class="feat_cour_tag">برامج التدخل المبكر</span>
+                      
+                    </div>
+                    <h4 class="feat_cour_tit">تستهدف هذه البرامج الأطفال الصغار (من سن الولادة حتى 5 سنوات) الذين يعانون من تأخر في النمو أو إعاقة. </h4>
+                </div>
+            </div>
+            <!-- /. col-lg-4 col-md-6 col-sm-12-->
+
+            <div class="col-lg-4 col-md-6 col-sm-12 mt-lg-5 mt-2">
+                <div class="feat_course_item">
+                    <img src="../images/3-01.jpg" alt="image"hidden>
+                    <div class="feat_cour_price">
+                        <span class="feat_cour_tag"> التعليم المهني والتقني</span>
+       
+                    </div>
+                    <h4 class="feat_cour_tit">تهدف هذه البرامج إلى إعداد الطلاب ذوي الهمم لدخول سوق العمل. تتضمن تدريباً على مهارات مهنية وتقنية محددة، والتعاون مع جهات خارجية لتوفير فرص التدريب العملي. </h4>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 mt-lg-5 mt-2">
+                <div class="feat_course_item">
+                    <img src="../images/3-01.jpg" alt="image" hidden>
+                    <div class="feat_cour_price">
+                        <span class="feat_cour_tag"> برامج الدعم التكنولوجي</span>
+       
+                    </div>
+                 
+                   <h4 class="feat_cour_tit">  استخدام التكنولوجيا المساعدة لتمكين الطلاب من التعلم بطريقة تناسب احتياجاتهم الخاصة. يمكن أن تشمل هذه الأدوات برامج حاسوبية مصممة خصيصاً، أو أجهزة مساعدة مثل الحواسيب اللوحية أو أجهزة التواصل البديلة.</h4>
+                </div>
+
+
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mt-lg-5 mt-2">
+                <div class="feat_course_item">
+                    <img src="../images/3-01.jpg" alt="image"hidden>
+                    <div class="feat_cour_price">
+                        <span class="feat_cour_tag"> برامج الدعم النفسي والسلوكي</span>
+       
+                    </div>
+                 
+                   <h4 class="feat_cour_tit"> تقدم هذه البرامج الدعم النفسي والسلوكي للطلاب الذين يعانون من اضطرابات نفسية أو سلوكية. يتم تقديم هذا الدعم من خلال جلسات فردية أو جماعية مع متخصصين.</h4>
+                </div>
+
+
+            </div>
+
+
+  
+
+
+    <!-- /. container -->
+</section>
+    <!-- End: Featured Courses Section
+==================================================-->
+
+    <!-- Start:  Best Books Section
+==================================================-->
+   
+
+
+
+
+    <!--   End: Best Books Section
+==================================================-->
+
+
+
+    <!-- Start:  Learners Feedback Section
+==================================================-->
+   
+    <!--   End: Learners Feedback Section
+==================================================-->
+
+
+
+    <!-- Start: Newsletter Section  
+==================================================-->
+    <section class="newsletter-section pb-130" hidden>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div class="newsletter_wrap">
+                        <!-- Start: Heading -->
+                        <div class="base-header">
+                            <h3> Sign Up To Our Newsletter </h3>
+                        </div>
+                        <span>
+                            Subscribe to our newsletter and get many <br />
+                            interesting things every week
+                        </span>
+                        <div class="newsletter_form">
+                            <input class="newsletter_field" name="search" id="search_field" type="text"
+                                placeholder="Type your email address" />
+                            <a href="#"> SUBSCRIBE </a>
+                        </div>
+                        <!-- Best Book Image 1 -->
+                    </div>
+                </div>
+            </div>
+            <!-- /. row -->
+        </div>
+        <!-- /. container -->
+    </section>
+    <!-- End: Newsletter Section
+==================================================-->
+
+
+
+    <!-- Start:Footer Section
+==================================================-->
+<footer class="footertwo2-section" dir="rtl">
+    <div class="container">
+        <div class="row pb-5 ">
+
+            <!-- Start: logo -->
+            <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-start">
+                <div class="footer_logo">
+                    <h5>التواصل</h5>
+                    <ul>
+                        <li dir="ltr">
+                            <a href="">(+971) 545 864 711 </a>
+                        </li>
+                        <li>
+                            <a href="services.html">info@aunaksmarteducation.com</a>
+                        </li>
+                        <li>
+                            <a href="services.html">الإمارات العربية المتحدة / واحة دبي للسيليكون/ بناء HQ / مكتب رقم 102</a>
+                        </li>
+                    </ul>
+                    <div class="footer_socil">
+                        <ul class="text-center">
+                            <li >
+                                <a href="https://www.facebook.com/profile.php?id=61560380259475"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://wa.me/+971545864711"><i class="fab fa-whatsapp"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="mailto:info@aunaksmarteducation.com"><svg style="width: 50%;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M64 112c-8.8 0-16 7.2-16 16l0 22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1l0-22.1c0-8.8-7.2-16-16-16L64 112zM48 212.2L48 384c0 8.8 7.2 16 16 16l384 0c8.8 0 16-7.2 16-16l0-171.8L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64l384 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 448c-35.3 0-64-28.7-64-64L0 128z"/></svg></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- End: logo -->
+
+            <!-- Start: Quick Link -->
+            <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-start">
+                <div class="foo_widgetquick_lnk">
+                    <h5>الفئات</h5>
+                    <ul>
+                        <li>
+                            <a href="courses.html">سياسة الخصوصية</a>
+                        </li>
+                        <li>
+                            <a href="courses.html">الشروط والأحكام</a>
+                        </li>
+                        <li>
+                            <a href="courses.html">الدعم</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- End: Quick Link -->
+
+            <!-- Start: Useful Link -->
+            <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-start">
+                <div class="foo_widgetuseful_lnk">
+                    <h5 class="text-center">روابط سريعة</h5>
+                    <ul class="text-center">
+                        <li>
+                            <a href="courses.html">حول</a>
+                        </li>
+                        <li>
+                            <a href="courses.html">تواصل</a>
+                        </li>
+                        <li>
+                            <a href="courses.html">دورات</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- End: Social Link-->
+
+            <!-- Start: Contact Form -->
+            <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                <img src="../images/logo-ar.png" alt="" class="w-75">
+            </div>
+            <!-- End: Contact Form-->
+        </div>
+    </div>
+    <!-- Start:Subfooter -->
+    <div class="subfooter" dir="ltr">
+        <p><a href="https://aunak.it/"> AunakIT </a> © 2024 جميع الحقوق محفوظة</p>
+    </div>
+    <!-- End:Subfooter -->
+</footer>
+    <!-- End:Footer Section
+========================================-->
+
+<script>
+   const locales = ["ar-AE", "en-GB"];
+
+function getFlagSrc(countryCode) {
+  return /^[A-Z]{2}$/.test(countryCode)
+    ? `https://flagsapi.com/${countryCode.toUpperCase()}/shiny/64.png`
+    : "";
+}
+
+const dropdownBtn = document.getElementById("dropdown-btn");
+const dropdownBtn2 = document.getElementById("dropdown-btn2");
+const dropdownContent = document.getElementById("dropdown-content");
+const dropdownContent2 = document.getElementById("dropdown-content2");
+
+function setSelectedLocale(locale) {
+  const intlLocale = new Intl.Locale(locale);
+  const langName = new Intl.DisplayNames([locale], {
+    type: "language",
+  }).of(intlLocale.language);
+
+  dropdownContent.innerHTML = "";
+
+  const otherLocales = locales.filter((loc) => loc !== locale);
+  otherLocales.forEach((otherLocale) => {
+    const otherIntlLocale = new Intl.Locale(otherLocale);
+    const otherLangName = new Intl.DisplayNames([otherLocale], {
+      type: "language",
+    }).of(otherIntlLocale.language);
+
+    const listEl = document.createElement("li");
+    listEl.innerHTML = `${otherLangName}<img src="${getFlagSrc(
+      otherIntlLocale.region
+    )}" />`;
+    listEl.value = otherLocale;
+    listEl.addEventListener("mousedown", function () {
+      setSelectedLocale(otherLocale);
+      window.location.href = '../index.html';
+    });
+    dropdownContent.appendChild(listEl);
+  });
+
+  dropdownBtn.innerHTML = `<img src="${getFlagSrc(
+    intlLocale.region
+  )}" />${langName}<span class="arrow-down"></span>`;
+}
+
+// Set the default locale to the first one in the list
+setSelectedLocale(locales[0]);
+
+</script>
+    <!-- Scripts
+========================================-->
+    <!-- jquery -->
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <!-- plugins -->
+    <script src="../js/plugins.js"></script>
+    <!-- Bootstrap -->
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="../js/jquery.stellar.min.js"></script>
+
+
+    <!-- Custom Scripts
+========================================-->
+    <script src="../js/main.js"></script>
+
+</body>
+
+</html>

@@ -39,7 +39,7 @@
         Feedback Section  
     =======================================*/
     $("#lfeedback_cur").owlCarousel({
-        autoplayTimeout: 5000, //Set AutoPlay to 5 seconds
+        autoplayTimeout: 15000, //Set AutoPlay to 5 seconds
         autoplay: true,
         smartSpeed: 2000, // Default is 250
         items: 1,   
