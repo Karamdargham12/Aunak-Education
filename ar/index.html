@@ -209,7 +209,7 @@ h1,h2,h3,h4,h5,h6,p,li,a,button{
             <div id="navigation" class="menu-wrap">
                 <ul  dir="ltr">
                     <li><a href="#">تواصل</a></li>
-                    <li><a href="#">منتدى</a>
+                    <li><a href="./blog.html">منتدى</a>
                         <!--
                         <ul>
                             <li><a href="blog.html">Blog One</a> </li>
@@ -219,7 +219,7 @@ h1,h2,h3,h4,h5,h6,p,li,a,button{
                         </ul>
                     -->
                     </li>
-                   <li ><a href="#">الدورات</a>
+                   <li ><a href="./courses.html">الدورات</a>
                     <!--
                      <ul>
                             <li><a href="course-category.html">Course Category</a> </li>
@@ -283,7 +283,7 @@ h1,h2,h3,h4,h5,h6,p,li,a,button{
                                 لتقنيّات التعليم الذكيّ<br />
                                 </h2>
                             <p> شركاء في التعليم المستدام</p>
-                            <a href="#" class="more-link"> تصفح </a>
+                            <a href="#features" class="more-link"> تصفح </a>
                         </div>
                         <!-- /.hero_text -->
                     </div>
@@ -296,7 +296,7 @@ h1,h2,h3,h4,h5,h6,p,li,a,button{
                                 <img src="../images/student.png" alt="" data-depth="0.10" class="layer">
                             </div>
                             <div class="hero_stu">
-                                <h4>  7 آلاف طالب  </h4>
+                                <h4 class="d-none">  7 آلاف طالب  </h4>
                                 <img src="../images/hero_students.png" alt="">
                             </div>
                             <img src="../images/pencil.png" alt="" class="pencil">
@@ -383,7 +383,7 @@ h1,h2,h3,h4,h5,h6,p,li,a,button{
                         <h3>مقدّمة </h3>
                         <p> وسطَ عالمٍ تقودُه عجلةُ التكنولوجيا المتجدّدة، ومع تزايدِ الطلب على توظيفها في التعليم تُدرك شركة عونك لتقنيات التعليم الذكيّ أهميّة هذه الحقيقة، وتؤمنُ بأنّ التعليم هو مفتاحُ بوابة المستقبل. 
                             لذلك تسعى جاهدةً إلى تقديم خدماتٍ تعليميّةٍ وتكنولوجيّةٍ متكاملةٍ تلبيةً للاحتياجات في مختلف قطاعاتِ التعليم، بدءاً من المدارس والجامعات وصولاً إلى الشركات والمؤسّسات.
-                      
+                        <a href="contact.html" class="more-link d-none"> قراءة المزيد... </a>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-12">
@@ -434,7 +434,7 @@ h1,h2,h3,h4,h5,h6,p,li,a,button{
 
     <!-- Start: Popular Categories Section
 ==================================================-->
-<section class="category-section ">
+<section class="category-section " id="features">
     <!-- Container -->
     <div class="container">
         <!-- Start: Heading -->
@@ -523,7 +523,7 @@ h1,h2,h3,h4,h5,h6,p,li,a,button{
                     <div class="feat_cour_price">
                         <span class="feat_cour_tag">الخدمات التربويّة</span>
                     </div>
-                    <h4 class="feat_cour_tit">نقدّم مجموعةً واسعةً من الخدمات للمتعلّمين والمعلّمين والمؤسّسات التعليميّة والتدريبيّة ولأولياء الأمور: استشارات تعليميّة – تنمية قدرات تصميم مناهج – تدريب وتأهيل - تقييم ومتابعة  مبادرات مجتمعيّة - برامج تربويّة ...</h4>
+                    <h4 class="feat_cour_tit">نقدّم مجموعةً واسعةً من الخدمات للمتعلّمين والمعلّمين والمؤسّسات التعليميّة والتدريبيّة ولأولياء الأمور: استشارات تعليميّة – تنمية قدرات - تصميم مناهج – تدريب وتأهيل - تقييم ومتابعة – مبادرات مجتمعيّة - برامج تربويّة ...</h4>
                 </div>
             </div>
             <!-- /. col-lg-4 col-md-6 col-sm-12-->
@@ -575,7 +575,7 @@ h1,h2,h3,h4,h5,h6,p,li,a,button{
                  
                    <h4 class="feat_cour_tit">نقدم مجموعة واسعة من الأدوات والتقنيات التي تدعم عملية التعليم عبر الإنترنت، بالإضافة لمحتوى تعليمي رقمي تفاعلي يضمن 
                   
-                    تجربة أكاديمية تعليمية شاملة ومرنة تلبي حاجات المتعلمين في أي وقت.
+                    تجربة أكاديمية تعليمية شاملة ومرنة تلبي حاجات المتعلمين في أي وقت
                 </h4>
                 </div>
 
@@ -584,10 +584,10 @@ h1,h2,h3,h4,h5,h6,p,li,a,button{
 
 
   <div class="text-center">
-            <a href="courses.html" class="more-link"> مشاهدة المزيد </a>
+            <a class="more-link" id="showButton"> مشاهدة المزيد </a>
         </div>
 
-
+           <div id="show-more-cards">
             <div class="col-lg-4 col-md-6 col-sm-12 mt-lg-5 mt-2">
                 <div class="feat_course_item">
                     <img src="../images/فصل مفتوح-01.jpg" alt="image">
@@ -609,7 +609,7 @@ h1,h2,h3,h4,h5,h6,p,li,a,button{
                         <span class="feat_cour_tag">ندوات عبر الإنترنت Webinars </span>
        
                     </div>
-                    <h4 class="feat_cour_tit">الندوات عبر الإنترنت هي عروض تقديمية مباشرة أو مسجلة يمكن للكادر مشاهدتها في الوقت الذي يناسبهم، يقدمها المدرب على فترات متقطعة.</h4>
+                    <h4 class="feat_cour_tit">الندوات عبر الإنترنت هي عروض تقديمية مباشرة أو مسجلة يمكن للكادر مشاهدتها في الوقت الذي يناسبهم، يقدمها المدرب على فترات متقطعة</h4>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12 mt-lg-5 mt-2">
@@ -645,6 +645,7 @@ h1,h2,h3,h4,h5,h6,p,li,a,button{
                     </h4>
                 </div>
             </div>
+        </div>
             <!-- /. col-lg-4 col-md-6 col-sm-12-->
 
           
@@ -792,13 +793,18 @@ h1,h2,h3,h4,h5,h6,p,li,a,button{
                     <h5>التواصل</h5>
                     <ul>
                         <li dir="ltr">
-                            <a href="">(+971) 545 864 711 </a>
+                            <li>
+                                <p style="color: black;">الإمارات العربية المتحدة / واحة دبي للسيليكون/ بناء HQ / مكتب رقم 102</p>
+                                <a dir="ltr" href="tel:00971545864711">(+971) 545 864 711 </a>
+                            </li>
+                            
+                        </li>
+                        <li dir="ltr">
+                            <p style="color: black;">المملكة العربية السعودية / الرياض / السليمانية</p>
+                            <a href="tell:00966543467440">(+966) 543 467 440 </a>
                         </li>
                         <li>
-                            <a href="services.html">info@aunaksmarteducation.com</a>
-                        </li>
-                        <li>
-                            <a href="services.html">الإمارات العربية المتحدة / واحة دبي للسيليكون/ بناء HQ / مكتب رقم 102</a>
+                            <a href="mailto:info@aunaksmarteducation.com">info@aunaksmarteducation.com</a>
                         </li>
                     </ul>
                     <div class="footer_socil">
@@ -882,6 +888,11 @@ function getFlagSrc(countryCode) {
   return /^[A-Z]{2}$/.test(countryCode)
     ? `https://flagsapi.com/${countryCode.toUpperCase()}/shiny/64.png`
     : "";
+}
+const showButton = document.getElementById("showButton")
+showButton.onclick=function (){
+    document.getElementById("show-more-cards").style.display="contents"
+    this.style.display="none"
 }
 
 const dropdownBtn = document.getElementById("dropdown-btn");

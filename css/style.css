@@ -2223,6 +2223,9 @@ footer ul li {
 .footer_contact_form .con-field::placeholder {
   color: #A9A9AB;
 }
+#show-more-cards{
+  display: none;
+}
 
 .footer_contact_form #submit-contact {
   font-size: 16px;
