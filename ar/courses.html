@@ -208,7 +208,7 @@ h1,h2,h3,h4,h5,h6,p,li,a,button{
                 </div>
             <div id="navigation" class="menu-wrap">
                 <ul  dir="ltr">
-                    <li><a href="#">تواصل</a></li>
+                    <li class="d-none"><a href="#">تواصل</a></li>
                     <li><a href="./blog.html">منتدى</a>
                         <!--
                         <ul>
@@ -229,7 +229,7 @@ h1,h2,h3,h4,h5,h6,p,li,a,button{
                     -->
                        
                     </li>
-                    <li class="has-sub"><a href="#">الصفحات</a>
+                    <li class="has-sub d-none"><a href="#">الصفحات</a>
                         <!--
                         <ul>
                             <li><a href="course-category.html">Course Category</a> </li>
@@ -837,7 +837,7 @@ function setSelectedLocale(locale) {
     listEl.value = otherLocale;
     listEl.addEventListener("mousedown", function () {
       setSelectedLocale(otherLocale);
-      window.location.href = '../index.html';
+      window.location.href = '../courses.html';
     });
     dropdownContent.appendChild(listEl);
   });

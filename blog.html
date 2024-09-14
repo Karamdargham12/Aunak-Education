@@ -7,23 +7,31 @@
 <!--
 <![endif]-->
 
+
 <head>
     <!-- TITLE OF SITE -->
-    <title>Aducat - eLearning Education HTML5 Responsive Template</title>
+    <title>Aunak Smart Education</title>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Fizxila - eLearning Education HTML5 Responsive Template" />
+    <meta name="description" content="Smart Education Technology" />
     <meta name="keywords"
-        content="Aducat, Education, Learning, one page, multipage, responsive, courses, html template" />
-    <meta name="author" content="Aducat">
+        content="Aunak Smart Education, Education, Learning, one page, multipage, responsive, courses," />
+    <meta name="author" content="AunakIT">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <!-- Favicons -->
-    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Favicons --> 
+    <link rel="apple-touch-icon" sizes="152x152" href="./images/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+<link rel="manifest" href="./images/favicon/site.webmanifest">
+<link rel="mask-icon" href="./images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
 
 
-    <!-- CSS Begins
+    <!-- CSS Begins 
 ================================================== -->
     <!--Animate Effect-->
     <link href="css/animate.css" rel="stylesheet">
@@ -50,7 +58,119 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+    <style>
+        .feature-category p{
+            text-align: right !important;
+        }
+            .owl-dots {
+          right: 0;
+        }
+        .dropdown button {
+          background-color: #253849;
+          min-width: 130px;
+          width: max-content;
+          height: 40px;
+          border-radius: 5px;
+          color: white;
+          padding: 10px;
+          font-size: 16px;
+          border: none;
+          cursor: pointer;
+          justify-content: space-evenly;
+        }
+        .dropdown button img {
+          margin: 0 5px 0 0;
+        }
+        .dropdown button img,
+        .dropdown-content li img {
+          width: 28px;
+        }
+        .dropdown button,
+        .dropdown-content li {
+          display: flex;
+          align-items: center;
+          font-size: 14px;
+          font-weight: 500;
+        }
+        .arrow-down {
+          width: 0;
+          height: 0;
+          display: inline-block;
+          vertical-align: middle;
+          border-style: solid;
+          border-width: 4px 4px 0 4px;
+          border-color: #fff transparent transparent transparent;
+          margin: 0 0 0 5px;
+        }
+        
+        .dropdown button:hover {
+          cursor: pointer;
+          background-color: #3c5b77;
+        }
+        /* Style for the dropdown content */
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          margin: 1px 0 0 0;
+          padding: 0;
+          background-color: #f5f5f5;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          z-index: 1;
+          border-radius: 5px;
+          overflow-y: scroll;
+          max-height: 315px;
+        }
+        /* Style for the dropdown content items */
+        .dropdown-content li {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          justify-content: end;
+        }
+        .dropdown-content li img {
+          margin: 0 20px 0px 20px;
+        }
+        /* Style for the dropdown content items on hover */
+        .dropdown-content li:hover {
+          background-color: #f1f1f1;
+          cursor: pointer;
+          color: blue;
+          border-radius: 5px;
+        }
+        /* Show the dropdown content when the dropdown button is clicked */
+        .dropdown:focus-within .dropdown-content {
+          display: block;
+        }
+        /* Animate the dropdown content */
+        @keyframes slideIn {
+          from {
+            opacity: 0;
+            transform: translateY(-10px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        .dropdown-content {
+          animation: slideIn 0.3s ease-out;
+        }
+        /* Scrollbar styles */
+        ::-webkit-scrollbar {
+          width: 8px;
+          height: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+          border-radius: 8px;
+          background: #c2c9d2;
+        }
+        @media (max-width:992px) {
+            #dropdown-btn{
+                display: none;
+            }
+        }
+        </style>
 </head>
 
 <body>
@@ -64,23 +184,20 @@
 
 
     <!-- Start: header navigation -->
-    <div class="navigation">
+    <div class="navigation navigation_two" style="position: relative !important;">
         <div class="container">
             <div class="logo">
-                <a href="index.html"><img class="img-responsive" src="images/logo.png" alt="">
+                <a href="index.html"><img class="img-responsive" src="images/logo.png" style="width: 100%;" alt="">
                 </a>
             </div>
             <div id="navigation" class="menu-wrap">
                 <ul>
-                    <li class="has-sub"><a href="index.html">Home</a>
-                        <ul>
-                            <li><a href="index.html">Home One</a> </li>
-                            <li><a href="index-two.html">Home Two</a> </li>
-                        </ul>
+                    <li><a href="./index.html">Home</a>
+    
                     </li>
-                    <li><a href="about.html">About</a></li>
-                    <li class="has-sub"><a href="index.html">Pages</a>
-                        <ul>
+                    <li class=""><a href="./about.html">About</a></li>
+                    <li class="has-sub d-none"><a href="#">Pages</a>
+                       <!--  <ul>
                             <li><a href="course-category.html">Course Category</a> </li>
                             <li><a href="courses.html">Our Course</a> </li>
                             <li><a href="single-course.html">Course Details</a> </li>
@@ -92,35 +209,53 @@
                             <li><a href="single-event.html">Event Details</a> </li>
                             <li><a href="gallery.html">Gallery Page</a> </li>
                             <li><a href="404.html">404 Page</a> </li>
-                        </ul>
+                        </ul> --> 
                     </li>
-                    <li class="has-sub"><a href="courses.html"> Courses</a>
-                        <ul>
+                    <li ><a href="./courses.html"> Courses</a>
+                        <!--
+    <ul>
                             <li><a href="course-category.html">Course Category</a> </li>
                             <li><a href="courses.html">Our Course</a> </li>
                             <li><a href="single-course.html">Course Details</a> </li>
                         </ul>
+                        -->   
                     </li>
-                    <li class="has-sub"><a href="blog.html">Blog</a>
-                        <ul>
+                    <li class="active"><a href="./blog.html">Blog</a>
+    
+                        <!--
+    <ul>
                             <li><a href="blog.html">Blog One</a> </li>
                             <li><a href="single-blog.html">Blog Details</a> </li>
                             <li><a href="events.html">Event Page</a> </li>
                             <li><a href="single-event.html">Event Details</a> </li>
                         </ul>
                     </li>
-                    <li><a href="contact.html">Contact</a></li>
+                        -->
+                     
+                    <li class="d-none"><a href="./contact.html">Contact</a></li>
+                    <li class="active lang"><a href="./ar/about.html"><img src="./images/united-arab-emirates.png" style="width: 12%;"></a>
+    
+                    </li>
                 </ul>
             </div>
-            <!-- End: Menu  -->
-
-            <div class="header_sign">
+            <!-- End: navigation  -->
+            <div class="header_sign" hidden>
                 <a href="#" class="more-link"> Sign in</a>
             </div>
+    
+    <div class="dropdown " id="dropdown" dir="ltr" tab-index="0">
+        <button id="dropdown-btn"></button>
+        <ul class="dropdown-content" id="dropdown-content"></ul>
+      </div>
+    
+               
+    
+            
+            <!-- End: Sign in -->
         </div>
         <!--/ container -->
+     
     </div>
-    <!-- End: header navigation -->
 
 
     <!-- header -->
@@ -308,124 +443,166 @@
 ==================================================-->
 
 
+
     <!-- Start:Footer Section
 ==================================================-->
-    <footer class="footertwo-section">
-        <div class="container">
-            <div class="row">
+<footer class="footertwo-section">
+    <div class="container">
+        <div class="row ">
 
-                <!-- Start: logo -->
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="footer_logo">
-                        <img src="images/logo.png" alt="">
+            <!-- Start: logo -->
+            <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-start">
+                <div class="footer_logo">
+                    <h5>Info</h5>
+                    <ul>
+                        <li>
+                            <p style="color: black;">United Arab Emirates, Dubai Silicon Oasis, HQ Building, Office No. 102</p>
+                            <a href="">(+971) 545 864 711 </a>
+                        </li>
+                        <li>
+                            <p style="color: black;">Saudi Arabia / Riyadh / Sulaymaniyah</p>
+                            <a href="">(+971) 545 864 711 </a>
+                        </li>
+                        <li>
+                            <a href="services.html">info@aunaksmarteducation.com</a>
+                        </li>
+                    </ul>
+                    <div class="footer_socil">
                         <ul>
                             <li>
-                                <a href="">(+75) 36 6552 9564 </a>
+                                <a href="https://www.facebook.com/profile.php?id=61560380259475"><i class="fab fa-facebook-f"></i></a>
                             </li>
                             <li>
-                                <a href="services.html">contact@domain.com</a>
+                                <a href="https://wa.me/+971545864711"><i class="fab fa-whatsapp"></i></a>
                             </li>
                             <li>
-                                <a href="services.html">Washington, United State</a>
-                            </li>
-                        </ul>
-                        <div class="footer_socil">
-                            <ul>
-                                <li>
-                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fab fa-pinterest"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- End: logo -->
-
-                <!-- Start: Quick Link -->
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="foo_widget quick_lnk">
-                        <h5>Category</h5>
-                        <ul>
-                            <li>
-                                <a href="courses.html">Privacy & Poilicy</a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
                             </li>
                             <li>
-                                <a href="courses.html">Terms & Condition</a>
-                            </li>
-                            <li>
-                                <a href="courses.html">Customer Support</a>
-                            </li>
-                            <li>
-                                <a href="courses.html">For Business </a>
-                            </li>
-                            <li>
-                                <a href="courses.html">Support</a>
+                                <a href="mailto:info@aunaksmarteducation.com"><svg style="width: 50%;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M64 112c-8.8 0-16 7.2-16 16l0 22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1l0-22.1c0-8.8-7.2-16-16-16L64 112zM48 212.2L48 384c0 8.8 7.2 16 16 16l384 0c8.8 0 16-7.2 16-16l0-171.8L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64l384 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 448c-35.3 0-64-28.7-64-64L0 128z"/></svg></a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <!-- End: Quick Link -->
-
-                <!-- Start: Useful Link -->
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="foo_widget useful_lnk">
-                        <h5>Useful Links</h5>
-                        <ul>
-                            <li>
-                                <a href="courses.html">About Us</a>
-                            </li>
-                            <li>
-                                <a href="courses.html">Refer A Friend</a>
-                            </li>
-                            <li>
-                                <a href="courses.html">Scolarship</a>
-                            </li>
-                            <li>
-                                <a href="courses.html">Marketing</a>
-                            </li>
-                            <li>
-                                <a href="courses.html">Free Courses</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- End: Social Link-->
-
-                <!-- Start: Contact Form -->
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="foo_widget footer_contact_form">
-                        <h5>Send Message</h5>
-                        <form method="post" action="mailer.php">
-                            <input class="con-field" name="email" id="email" type="text" placeholder="Your Email">
-                            <textarea class="con-field" name="email" id="message"
-                                placeholder="Your Message"> </textarea>
-                            <input type="submit" id="submit-contact" class="btn-alt" value="Submit">
-                        </form>
-                    </div>
-                </div>
-                <!-- End: Contact Form-->
             </div>
+            <!-- End: logo -->
+
+            <!-- Start: Quick Link -->
+            <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-start">
+                <div class="foo_widgetquick_lnk">
+                    <h5>Category</h5>
+                    <ul>
+                        <li>
+                            <a href="courses.html">Privacy & Poilicy</a>
+                        </li>
+                        <li>
+                            <a href="courses.html">Terms & Condition</a>
+                        </li>
+                       
+                        <li>
+                            <a href="courses.html">Support</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- End: Quick Link -->
+
+            <!-- Start: Useful Link -->
+            <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-start">
+                <div class="foo_widgetuseful_lnk">
+                    <h5>Useful Links</h5>
+                    <ul>
+                        <li>
+                            <a href="./about.html">About Us</a>
+                        </li>
+                        <li>
+                            <a href="./contact.html">Contact Us</a>
+                        </li>
+                       
+                        <li>
+                            <a href="./courses.html">Courses</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- End: Social Link-->
+
+            <!-- Start: Contact Form -->
+            <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                <img  src="images/logo.png" alt="">
+                <div class="foo_widget footer_contact_form " hidden>
+                    <h5>Send Message</h5>
+                    <form method="post" action="mailer.php">
+                        <input class="con-field" name="email" id="email" type="text" placeholder="Your Email">
+                        <textarea class="con-field" name="email" id="message"
+                            placeholder="Your Message"> </textarea>
+                        <input type="submit" id="submit-contact" class="btn-alt" value="Submit">
+                    </form>
+                </div>
+            </div>
+            <!-- End: Contact Form-->
         </div>
-        <!-- Start:Subfooter -->
-        <div class="subfooter">
-            <p> Copyright © 2021 <a href="index.html">Aducat.</a> All rights Reserved.</p>
-        </div>
-        <!-- End:Subfooter -->
-    </footer>
-    <!-- End:Footer Section
+    </div>
+    <!-- Start:Subfooter -->
+    <div class="subfooter">
+        <p> Copyright © 2024 <a href="https://aunak.it/">Aunakit.</a> All rights Reserved.</p>
+    </div>
+    <!-- End:Subfooter -->
+</footer>
+<!-- End:Footer Section
 ========================================-->
 
 
+<script>
+    const locales = ["ar-AE", "en-GB"];
+    
+    function getFlagSrc(countryCode) {
+    return /^[A-Z]{2}$/.test(countryCode)
+    ? `https://flagsapi.com/${countryCode.toUpperCase()}/shiny/64.png`
+    : "";
+    }
+    
+    const dropdownBtn = document.getElementById("dropdown-btn");
+    const dropdownContent = document.getElementById("dropdown-content");
+    
+    function setSelectedLocale(locale) {
+    const intlLocale = new Intl.Locale(locale);
+    const langName = new Intl.DisplayNames([locale], {
+    type: "language",
+    }).of(intlLocale.language);
+    
+    dropdownContent.innerHTML = "";
+    
+    const otherLocales = locales.filter((loc) => loc !== locale);
+    otherLocales.forEach((otherLocale) => {
+    const otherIntlLocale = new Intl.Locale(otherLocale);
+    const otherLangName = new Intl.DisplayNames([otherLocale], {
+      type: "language",
+    }).of(otherIntlLocale.language);
+    
+    const listEl = document.createElement("li");
+    listEl.innerHTML = `${otherLangName}<img src="${getFlagSrc(
+      otherIntlLocale.region
+    )}" />`;
+    listEl.value = otherLocale;
+    listEl.addEventListener("mousedown", function () {
+      setSelectedLocale(otherLocale);
+      window.location.href = './ar/blog.html';
+    });
+    dropdownContent.appendChild(listEl);
+    });
+    
+    dropdownBtn.innerHTML = `<img src="${getFlagSrc(
+    intlLocale.region
+    )}" />${langName}<span class="arrow-down"></span>`;
+    }
+    
+    // Set the default locale to the first one in the list
+    setSelectedLocale(locales[1]);
+    
+    </script>
     <!-- Scripts
-========================================-->
+    ========================================-->
     <!-- jquery -->
     <script src="js/jquery-1.12.4.min.js"></script>
     <!-- plugins -->
@@ -433,10 +610,11 @@
     <!-- Bootstrap -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/slick.min.js"></script>
-
-
+    <script src="js/jquery.stellar.min.js"></script>
+    
+    
     <!-- Custom Scripts
-========================================-->
+    ========================================-->
     <script src="js/main.js"></script>
 
 </body>
