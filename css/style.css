@@ -1466,7 +1466,9 @@ font-size: 18px !important;
   justify-content: space-between;
   align-items: center;
 }
-
+.ceo-image{
+  width: 30%;
+}
 .feat_cour_rat i {
   margin: 0px 1px;
   color: #FFC107;
@@ -4621,6 +4623,9 @@ aside.widget-event-quote {
   }
 }
 @media (max-width:992px) {
+  .ceo-image{
+    width: 100%;
+  }
   .lang{
     display: flex;
   }
