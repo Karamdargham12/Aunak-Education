@@ -1467,7 +1467,7 @@ font-size: 18px !important;
   align-items: center;
 }
 .ceo-image{
-  width: 30%;
+  width: 30% !important;
 }
 .feat_cour_rat i {
   margin: 0px 1px;
