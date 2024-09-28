@@ -1467,7 +1467,7 @@ font-size: 18px !important;
   align-items: center;
 }
 .ceo-image{
-  width: 30% !important;
+  width: 60% !important;
 }
 .feat_cour_rat i {
   margin: 0px 1px;
@@ -2041,7 +2041,7 @@ footer ul li {
 }
 
 .about_text {
-  padding-left: 70px;
+  text-align: center;
 }
 
 .about_text h3 {
