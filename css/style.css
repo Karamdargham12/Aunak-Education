@@ -4609,10 +4609,42 @@ aside.widget-event-quote {
   margin-top: 20px;
   margin-bottom: 40px;
 }
+.blog-slider{
+padding: 40px 0px;
+background: url(../images/ZANATE.png);
+background-position-x: 20px;background-position-y: center;
+background-repeat: no-repeat;
+background-size: 300px;
+background-color: #fff;
+}
+.blog-slider-text{
+  padding-left: 30%;
+  padding-right: 30px;
+  padding-top: 30px;
+}
+.blog-slider-title{
+  position: absolute;
+  left: 50%;
+  background-color: #FCB51C;
+  color:#fff ;
+  padding: 10px;
+}
 .lang{
   display: none;
 }
 @media (max-width:1200px) {
+  .blog-slider-title{
+    position: static;
+    
+  }
+  .blog-slider{
+    background: #fff;
+  }
+  .blog-slider-text{
+    padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 30px;
+  }
   .navigation #navigation {
     margin-right: 0px
   }
@@ -4624,7 +4656,7 @@ aside.widget-event-quote {
 }
 @media (max-width:992px) {
   .ceo-image{
-    width: 100%;
+    width: 100% !important;
   }
   .lang{
     display: flex;
