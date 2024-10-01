@@ -58,117 +58,152 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <style>
-        .feature-category p{
-            text-align: right !important;
+      .feature-category p{
+    text-align: left !important;
+}
+    .owl-dots {
+  right: 0;
+}
+#navigation.small-screen .submenu-button{
+    left: 0;
+}
+.dropdown button {
+      background-color: #253849;
+      min-width: 130px;
+      width: max-content;
+      height: 40px;
+      border-radius: 5px;
+      color: white;
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      justify-content: space-evenly;
+    }
+    .dropdown button img {
+      margin: 0 5px 0 0;
+    }
+    .dropdown button img,
+    .dropdown-content li img {
+      width: 28px;
+    }
+    .dropdown button,
+    .dropdown-content li {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .sticky-wrapper{
+        background-color: #EAF1ED;
+    }
+.arrow-down {
+  width: 0;
+  height: 0;
+  display: inline-block;
+  vertical-align: middle;
+  border-style: solid;
+  border-width: 4px 4px 0 4px;
+  border-color: #fff transparent transparent transparent;
+  margin: 0 0 0 5px;
+}
+
+
+.dropdown button:hover {
+      cursor: pointer;
+      background-color: #3c5b77;
+    }
+    /* Style for the dropdown content */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      margin: 1px 0 0 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      border-radius: 5px;
+      overflow-y: scroll;
+      max-height: 315px;
+    }
+    /* Style for the dropdown content items */
+    .dropdown-content li {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      justify-content: end;
+    }
+    .dropdown-content li img {
+      margin: 0 20px 0px 20px;
+    }
+    /* Style for the dropdown content items on hover */
+    .dropdown-content li:hover {
+      background-color: #f1f1f1;
+      cursor: pointer;
+      color: blue;
+      border-radius: 5px;
+    }
+    /* Show the dropdown content when the dropdown button is clicked */
+    .dropdown:focus-within .dropdown-content {
+      display: block;
+    }
+    .feature-category{
+        height: 190px !important;
+    }
+    /* Animate the dropdown content */
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .dropdown-content {
+      animation: slideIn 0.3s ease-out;
+    }
+    /* Scrollbar styles */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 10px;
+    }
+    ::-webkit-scrollbar-thumb {
+      border-radius: 8px;
+      background: #c2c9d2;
+    }
+    .blog-slider-avatar{
+        display: none;
+    }
+    @media (max-width:1200px) {
+        .blog-slider-avatar{
+            margin: 20px;
+            padding-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #42C0C6;
+    border-radius: 100%;
+    }
+    .blog-slider-avatar img{
+        width: 55% !important;
+    }
+    }
+    @media (max-width:992px) {
+        #dropdown-btn{
+            display: none;
         }
-            .owl-dots {
-          right: 0;
+        #navigation>ul>li.has-sub>a, #navigation>ul>li>a{
+            text-align: right;
+            padding: 17px 20px 17px 0px;
         }
-        .dropdown button {
-          background-color: #253849;
-          min-width: 130px;
-          width: max-content;
-          height: 40px;
-          border-radius: 5px;
-          color: white;
-          padding: 10px;
-          font-size: 16px;
-          border: none;
-          cursor: pointer;
-          justify-content: space-evenly;
+        #navigation.small-screen #menu-button:before{
+            
         }
-        .dropdown button img {
-          margin: 0 5px 0 0;
-        }
-        .dropdown button img,
-        .dropdown-content li img {
-          width: 28px;
-        }
-        .dropdown button,
-        .dropdown-content li {
-          display: flex;
-          align-items: center;
-          font-size: 14px;
-          font-weight: 500;
-        }
-        .arrow-down {
-          width: 0;
-          height: 0;
-          display: inline-block;
-          vertical-align: middle;
-          border-style: solid;
-          border-width: 4px 4px 0 4px;
-          border-color: #fff transparent transparent transparent;
-          margin: 0 0 0 5px;
-        }
-        
-        .dropdown button:hover {
-          cursor: pointer;
-          background-color: #3c5b77;
-        }
-        /* Style for the dropdown content */
-        .dropdown-content {
-          display: none;
-          position: absolute;
-          margin: 1px 0 0 0;
-          padding: 0;
-          background-color: #f5f5f5;
-          min-width: 160px;
-          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-          z-index: 1;
-          border-radius: 5px;
-          overflow-y: scroll;
-          max-height: 315px;
-        }
-        /* Style for the dropdown content items */
-        .dropdown-content li {
-          color: black;
-          padding: 12px 16px;
-          text-decoration: none;
-          justify-content: end;
-        }
-        .dropdown-content li img {
-          margin: 0 20px 0px 20px;
-        }
-        /* Style for the dropdown content items on hover */
-        .dropdown-content li:hover {
-          background-color: #f1f1f1;
-          cursor: pointer;
-          color: blue;
-          border-radius: 5px;
-        }
-        /* Show the dropdown content when the dropdown button is clicked */
-        .dropdown:focus-within .dropdown-content {
-          display: block;
-        }
-        /* Animate the dropdown content */
-        @keyframes slideIn {
-          from {
-            opacity: 0;
-            transform: translateY(-10px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-        .dropdown-content {
-          animation: slideIn 0.3s ease-out;
-        }
-        /* Scrollbar styles */
-        ::-webkit-scrollbar {
-          width: 8px;
-          height: 10px;
-        }
-        ::-webkit-scrollbar-thumb {
-          border-radius: 8px;
-          background: #c2c9d2;
-        }
-        @media (max-width:992px) {
-            #dropdown-btn{
-                display: none;
-            }
-        }
+
+    }
         </style>
 </head>
 
@@ -266,7 +301,7 @@
         <div class="row text-center wow fadeInUp" data-wow-delay="0.5s">
             <div class="col-sm-12">
                 <!-- Headline Goes Here -->
-                <h3>المنتدى</h3>
+                <h3>Blog</h3>
             </div>
         </div>
         <!-- End: .row -->
@@ -448,28 +483,26 @@ It is concerned with teaching the Syrian curriculum from the elementary stage
         </section>
 
 
-
                         <section class="lfeedback-section">
                              
-                        <h3 class="text-center fs-1"> Our cadres </h3>
-
-                            <!-- Container -->
-                            <div class="container pt-5">
-                                <div class="row">
-                                    <div class="col-md-6 col-sm-12">
-                                        <div class="lfeedback_img" id="scene3">
-                                            <img src="../images/ZANATE.png" class="ceo-image" alt="image" class="layer" data-depth="0.28">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 col-sm-12" id="lfeedback_cur" dir="ltr">
-                                        <div class="lfeedback_item">
-                                            <!-- Start: Heading -->
-                                            <div class="base-header">
-                                                <h4>Dr.Hussein Zanati</h4>
-                                            </div>
-                                            <!-- Best Book Image 1 -->
-                                            <div class="lfeedback_text">
-                                                
+                            <h3 class="text-center fs-1"> Our Staff </h3>
+    
+                                <!-- Container -->
+                                <div class="container pt-5">
+                                    <div class="row">
+                                        <div class="col-12 blog-slider"  id="lfeedback_cur"  >
+                                            <div class="lfeedback_item ">
+                                                <!-- Start: Heading -->
+                                                <div class="base-header">
+                                                    <h4 class="blog-slider-title">Dr.Hussein Zanati</h4>
+                                                </div>
+                                                <div class="blog-slider-avatar">
+                                                    <img src="../images/ZANATE.png">
+                                                </div>
+                                                <!-- Best Book Image 1 -->
+                                                <div class="lfeedback_text blog-slider-text">
+                                                    
+                                                   
                                                 <p>
 
                                                     1. Holds a PhD In Information Technology Engineering – E-learning and its application to primary education from Kitami University in Japan
@@ -500,22 +533,17 @@ It is concerned with teaching the Syrian curriculum from the elementary stage
                                                       <br>
                                                     13.CEO of the Arab-Japanese Center affiliated with the League of Arab States  
                                                   </p>
-                                                
-
-
-
-
-                                    
+                                        
+                                                </div>
                                             </div>
                                         </div>
+                                        <!--/ col-md-12  -->
                                     </div>
-                                    <!--/ col-md-12  -->
+                                    <!--/ row - -->
                                 </div>
-                                <!--/ row - -->
-                            </div>
-                            <!--/ Container - -->
-                        </section>
-
+                                <!--/ Container - -->
+                            </section>
+    
 
     <!-- End: Hero Section
 ==================================================-->
@@ -608,9 +636,6 @@ It is concerned with teaching the Syrian curriculum from the elementary stage
 
 
 
-
-   <!-- Start:Footer Section
-==================================================-->
 <footer class="footertwo-section">
     <div class="container">
         <div class="row ">
@@ -655,14 +680,14 @@ It is concerned with teaching the Syrian curriculum from the elementary stage
                     <h5>Category</h5>
                     <ul>
                         <li>
-                            <a href="courses.html">Privacy & Poilicy</a>
+                            <a href="#">Privacy & Poilicy</a>
                         </li>
                         <li>
-                            <a href="courses.html">Terms & Condition</a>
+                            <a href="#">Terms & Condition</a>
                         </li>
                        
                         <li>
-                            <a href="courses.html">Support</a>
+                            <a href="#">Support</a>
                         </li>
                     </ul>
                 </div>
@@ -678,11 +703,11 @@ It is concerned with teaching the Syrian curriculum from the elementary stage
                             <a href="./about.html">About Us</a>
                         </li>
                         <li>
-                            <a href="./contact.html">Contact Us</a>
+                            <a href="./services.html">Services</a>
                         </li>
                        
                         <li>
-                            <a href="./courses.html">Courses</a>
+                            <a href="./blog.html">Blog</a>
                         </li>
                     </ul>
                 </div>
