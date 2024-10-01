@@ -483,8 +483,8 @@ section {
 }
 
 .is-sticky .navigation {
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .navigation #navigation {
@@ -806,7 +806,7 @@ section {
 
 #navigation.small-screen #menu-button {
   display: block;
-  margin-top: 20px;
+  margin-top: 30px;
   padding: 17px;
   color: #171818;
   cursor: pointer;
@@ -1291,7 +1291,7 @@ section {
   align-content: center;
   padding: 30px 35px;
   border-radius: 12px;
-  height: 250px;
+  height: 465px;
 }
 .feature-category p{
   color: black;
@@ -1864,7 +1864,8 @@ footer ul li {
 ------------------------------------------------------*/
 
 .navigation.navigation_two {
-  padding-top: 30px;
+  padding-top: 0px;
+  padding-bottom: 0px;
   background-color: #EAF1ED;
 }
 
@@ -4633,6 +4634,10 @@ background-color: #fff;
   display: none;
 }
 @media (max-width:1200px) {
+  .feature-category{
+    padding: 10px;
+      height: 413px;
+  }
   .blog-slider-title{
     position: static;
     
@@ -4648,10 +4653,11 @@ background-color: #fff;
   .navigation #navigation {
     margin-right: 0px
   }
+  
   .navigation .logo{
-    position: absolute;
-    top: 15px;
-    right: 10px;
+    position: static;
+    top: 0px;
+    right: 0px;
   }
 }
 @media (max-width:992px) {
@@ -4674,4 +4680,14 @@ background-color: #fff;
   .slick-track{
     padding: 15%;
   }
+  .navigation .logo{
+    position: absolute;
+    top: 15px;
+    right: 10px;
+  }
+  .navigation.navigation_two {
+    padding-top: 30px;
+    
+  }
+  
 }

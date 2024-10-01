@@ -155,6 +155,9 @@ h1,h2,h3,h4,h5,h6,p,li,a,button{
     .dropdown:focus-within .dropdown-content {
       display: block;
     }
+    .feature-category{
+        height: 190px !important;
+    }
     /* Animate the dropdown content */
     @keyframes slideIn {
       from {
@@ -178,6 +181,23 @@ h1,h2,h3,h4,h5,h6,p,li,a,button{
       border-radius: 8px;
       background: #c2c9d2;
     }
+    .blog-slider-avatar{
+        display: none;
+    }
+    @media (max-width:1200px) {
+        .blog-slider-avatar{
+            margin: 20px;
+            padding-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #42C0C6;
+    border-radius: 100%;
+    }
+    .blog-slider-avatar img{
+        width: 55% !important;
+    }
+    }
     @media (max-width:992px) {
         #dropdown-btn{
             display: none;
@@ -189,6 +209,7 @@ h1,h2,h3,h4,h5,h6,p,li,a,button{
         #navigation.small-screen #menu-button:before{
             
         }
+
     }
 </style>
 </head>
@@ -353,7 +374,7 @@ h1,h2,h3,h4,h5,h6,p,li,a,button{
                     </div>
                     <div class="col-sm-12">
                         <div class="blog_wrp">
-                                <h4>الجامعةالافتراضية</h4>
+                                <h4>الجامعة الافتراضية</h4>
                                  <p>هي مؤسسة تعليمية عُليا في سوريا تهدف إلى توفير فرص التعليم العالي للجميع، بغض النظر عن المكان أو الظروف. تعتمد الجامعة على أحدث التقنيات في مجال التعليم عن بعد لتقديم برامجها الأكاديمية، مما يتيح للطلاب الدراسة والتعلّم بمرونة وسهولة.  </p>
                         </div>
                     </div>
@@ -473,6 +494,9 @@ h1,h2,h3,h4,h5,h6,p,li,a,button{
                                             <!-- Start: Heading -->
                                             <div class="base-header">
                                                 <h4 class="blog-slider-title">الدكتور حسين الزناتي</h4>
+                                            </div>
+                                            <div class="blog-slider-avatar">
+                                                <img src="../images/ZANATE.png">
                                             </div>
                                             <!-- Best Book Image 1 -->
                                             <div class="lfeedback_text blog-slider-text">
