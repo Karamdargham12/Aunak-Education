@@ -1467,7 +1467,7 @@ font-size: 18px !important;
   align-items: center;
 }
 .ceo-image{
-  width: 60% !important;
+  width: 100% !important;
 }
 .feat_cour_rat i {
   margin: 0px 1px;
@@ -1838,18 +1838,18 @@ footer ul li {
 
 .subfooter {
   text-align: center;
-  background: #42C0C6;
+  background: transparent;
   padding: 32px 15px 38px;
 }
 
 .subfooter p {
-  color: #fff;
+  color: #717173;
   margin: 0px;
   font-size: 14px;
 }
 
 .subfooter p a {
-  color: #fff;
+  color: #717173;
 }
 .img-responsive{
   width: 100%;
