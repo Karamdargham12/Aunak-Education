@@ -2278,14 +2278,14 @@ footer ul li {
   text-align: center;
   color: #000;
   height: 700px;
-  background: #fff;
+  background: url('../images/courses-banner.jpg');
   color: #000;
   box-sizing: border-box;
   height: 340px;
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  background-size:50% 400px ;
+  background-size:cover ;
   position: relative;
 }
 
@@ -2315,7 +2315,9 @@ footer ul li {
 }
 
 .single-header h3 {
-  color: #234D81;
+  color: #fff;
+  display: none;
+  text-shadow: 5 0 0 0 black;
   text-transform: capitalize;
   font-size: 55px;
   letter-spacing: 0px;
