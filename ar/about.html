@@ -59,7 +59,7 @@
     <style>
         @font-face {
       font-family: arabic;
-      src: url(../fonts/arabic.ttf);
+      src: url(../fonts/RH-Zak-Reg.otf);
     }
     .feature-category p{
         text-align: right !important;
@@ -215,7 +215,7 @@
                 <ul class="dropdown-content" id="dropdown-content"></ul>
               </div>
             <div id="navigation" class="menu-wrap">
-                <ul  dir="ltr">
+                <ul  dir="ltr" class="my-list" style="display: block;">
                     <li class="d-none"><a href="#">تواصل</a></li>
                     <li><a href="./blog.html">منتدى</a>
                         <!--
@@ -502,6 +502,19 @@
     <!-- End:Footer Section
 ========================================-->
 <script>
+        function reverseList() {
+    const list = document.querySelector('.my-list');
+    const items = Array.from(list.children);
+    if (window.innerWidth <= 992) {
+        items.reverse().forEach(item => list.appendChild(item));
+    }
+    else {
+        
+    }
+}
+
+window.addEventListener('resize', reverseList);
+window.addEventListener('load', reverseList);
     const locales = ["ar-AE", "en-GB"];
  
  function getFlagSrc(countryCode) {

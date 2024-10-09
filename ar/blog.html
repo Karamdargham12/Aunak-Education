@@ -25,6 +25,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
     <link rel="manifest" href="../images/favicon/site.webmanifest">
     <link rel="mask-icon" href="../images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
@@ -51,7 +52,7 @@
     <link href="../css/style.css" rel="stylesheet">
     <link href="../css/responsive.css" rel="stylesheet">
     
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <!--[if IE]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -60,7 +61,7 @@
 <style>
     @font-face {
   font-family: arabic;
-  src: url(../fonts/arabic.ttf);
+  src: url(../fonts/RH-Zak-Reg.otf);
 }
 .feature-category p{
     text-align: right !important;
@@ -211,7 +212,126 @@ h1,h2,h3,h4,h5,h6,p,li,a,button{
         }
 
     }
+    .slick-slide {
+            margin: 0px 20px;
+        }
+
+        .slick-slide img {
+            width: 100%;
+        }
+        .slick-slider
+        {
+            position: relative !important;
+            display: block;
+            box-sizing: border-box;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -webkit-touch-callout: none;
+            -khtml-user-select: none;
+            -ms-touch-action: pan-y;
+            touch-action: pan-y;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .slick-list
+        {
+            position: relative;
+            display: block;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+        }
+        .slick-list:focus
+        {
+            outline: none;
+        }
+        .slick-list.dragging
+        {
+            cursor: pointer;
+            cursor: hand;
+        }
+
+        .slick-slider .slick-track,
+        .slick-slider .slick-list
+        {
+            -webkit-transform: translate3d(0, 0, 0);
+            -moz-transform: translate3d(0, 0, 0);
+            -ms-transform: translate3d(0, 0, 0);
+            -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+
+        .slick-track
+        {
+            position: relative;
+            top: 0;
+            left: 0;
+            display: block;
+        }
+        .slick-track:before,
+        .slick-track:after
+        {
+            display: table;
+            content: '';
+        }
+        .slick-track:after
+        {
+            clear: both;
+        }
+        .slick-loading .slick-track
+        {
+            visibility: hidden;
+        }
+
+        .slick-slide
+        {
+            display: none;
+            float: left;
+            height: 100%;
+            min-height: 1px;
+        }
+        [dir='rtl'] .slick-slide
+        {
+            float: right;
+        }
+        .slick-slide img
+        {
+            display: block;
+        }
+        .slick-slide.slick-loading img
+        {
+            display: none;
+        }
+        .slick-slide.dragging img
+        {
+            pointer-events: none;
+        }
+        .slick-initialized .slick-slide
+        {
+            display: block;
+        }
+        .slick-loading .slick-slide
+        {
+            visibility: hidden;
+        }
+        .slick-vertical .slick-slide
+        {
+            display: block;
+            height: auto;
+            border: 1px solid transparent;
+        }
+        .slick-arrow.slick-hidden {
+            display: none;
+        }
+        @media (max-width: 768px) {
+            .title h1{
+                font-size: 20px !important;
+            }
+        }
 </style>
+
 </head>
 
 <body style="font-family: arabic !important;">
@@ -229,7 +349,7 @@ h1,h2,h3,h4,h5,h6,p,li,a,button{
                 <ul class="dropdown-content" id="dropdown-content"></ul>
                 </div>
             <div id="navigation" class="menu-wrap">
-                <ul  dir="ltr">
+                <ul  dir="ltr" class="my-list" style="display: block;">
                     <li class="d-none"><a href="#">تواصل</a></li>
                     <li class="active"><a href="./blog.html">منتدى</a>
                         <!--
@@ -312,7 +432,7 @@ h1,h2,h3,h4,h5,h6,p,li,a,button{
 
 <section class="about-section" dir="rtl">
     <!-- Container -->
-    <div class="container" style="background: linear-gradient(2deg, #1F497E, #EAF1ED);border-radius: 5px;">
+    <div class="container" style="background: linear-gradient(2deg, #7f95af, #EAF1ED);border-radius: 10px;">
             <div class="col-12">
                 <div class="about_text">
                     <h3 class="text-center pt-5">     كلمة الرئيس التنفيذي </h3>
@@ -324,10 +444,10 @@ h1,h2,h3,h4,h5,h6,p,li,a,button{
 نحن ملتزمون ببناء جسورٍ متينة من الثقة والإبداع مع شركائنا وعملائنا، واضعين نصب أعيننا هدفاً سامياً متمثِّلاً في:
 تحويل أفكارنا وطموحاتنا إلى واقعٍ ملموس، بفضل فريقنا الذي يمتاز بالكفاءة والالتزام، فنحنُ نستلهم القوة من كل تحدٍّ يواجهنا. وكلِّي ثقةٌ أنَّ كل تحدٍّ هو فرصة متنكّرة، وأن كل خطوة نخطوها تمهد الطريق أمام إنجازات أكبر وأعظم.
 •	نحن هنا لنفكر، لنلهم، لنبتكر، ولنحقق ما يبدو مستحيلاً. طموحاتنا لا تعرف الحدود، وإصرارنا على تحقيق النجاح مستدام. نعدكم بأن نبقى طليعةَ الابتكار، مضيئين دربنا بشغفٍ لا ينطفئ. معاً سنكتب قصصاً جديدة من النجاح يتردد أثرها عبر الأجيال، حيث الإبداع يلهم مسيرتنا، والتميز يعلّي رايتنا.
-الرئيس التنفيذي
-فيصل فهد عامر
+
                     </p>
-                            
+                    <h3 style="color: #19447b;"> 
+                        فيصل فهد عامر</h3>      
                 </div>
             </div>
      <div>
@@ -346,10 +466,19 @@ h1,h2,h3,h4,h5,h6,p,li,a,button{
 </section>
 
 <section class="about-section" dir="rtl">
-<div class="">
-    <h3 class="text-center fs-1"> شركاؤنا </h3>
-    <div class="container ">
+    <h3 class="text-center fs-1" > شركاؤنا </h3>
+    <section  dir="ltr" class="customer-logos slider contain" style=" grid-template-columns: none!important;padding-top: 60px;padding-bottom: 70px;">
+        <div class="slide"><img src="../images/logos/alshabaka-arabian-logo.png"></div>
+        <div class="slide"><img src="../images/logos/logo-chukyo.jpg"></div>
+        <div class="slide"><img src="../images/logos/logo-liebe.png"></div>
+        <div class="slide"><img src="../images/logos/svu.png"></div>
+        <div class="slide"><img src="../images/logos/logo-mint.jpg"></div>
+        <div class="slide"><img src="../images/logos/tanq.jpg"></div>
+
+    </section>
+    <div class="container" >
         <div class="row">
+            <div class="row">
             <!-- Blog Area -->
             <div class="col-lg-8 col-sm-12 blog-area">
                 <div class="row">
@@ -376,6 +505,12 @@ h1,h2,h3,h4,h5,h6,p,li,a,button{
                     </div>
                 </div>
                     </div>
+                    <div class="col-lg-4 col-sm-12 blog-area">
+                       <img style="padding-bottom: 60px;" src="../images/logos/svu.png" alt="">
+                       <img style="padding-top: 50px;" src="../images/logos/alshabaka-arabian-logo.png" alt="">
+                       <img style="padding-top: 100px;" src="../images/logos/logo-chukyo.jpg" alt="">
+                    </div>
+                </div>
                     <div class="col-12">
                     <div class="blog_wrp">
                         <h4> شركة Liebe </h3>
@@ -426,14 +561,14 @@ h1,h2,h3,h4,h5,h6,p,li,a,button{
             </div>
             <div class="col-sm-12 pt-5">
                 <div class="blog_wrp">
-                  <h4>البرامج الإبداعية</h4>
-                <p>تهدف إلى تأسيس الأطفال في المهارات الذهنية والبدنية والإبداعية.
-                    </p>
+                  <h4>أكاديمية تانكيو عرب اليابانية</h4>
+                <p>
+                    وهي أكاديمية تُعنى بتقديم العديد من البرامج للأطفال من سن 5 إلى 8 سنوات، تهدف من خلالها إلى تعزيز المشاركة الإيجابية، الحرية في التعبير عن الرأي، التفكير والبحث، اكتشاف المعلومات وتعزيز الهوايات عن طريق مراحل مستدامة، ومن ضمن هذه البرامج:</p>
                   <div class="row">
                     <div class="category-item col-lg-4 col-12" >
-                        <h1 style="background: #42C0C6;color: #fff;">خدمات شاملة </h1>
+                        <h1 style="background: #42C0C6;color: #fff;">البرامج الإبداعية</h1>
                         <div class="feature-category">
-                        <p> نلبّي الاحتياجات التعليميّة والتكنولوجيّة المبتكرة على نطاقٍ واسعٍ في مجالاتِ التعليم كافّة</p>
+                        <p> تهدف إلى تأسيس الأطفال في المهارات الذهنية والبدنية والإبداعية.</p>
                         </div>
                     </div>
                     <div class="category-item col-lg-4 col-12">
@@ -458,7 +593,8 @@ h1,h2,h3,h4,h5,h6,p,li,a,button{
 <p>برنامج تعليمي متطور لتعليم اللغة الإنجليزية والصوتيات بطرق علمية مرئية وصوتية شيقة لتسهيل طرق التدريس للمعلمين، وأيضاً تطوير طرق التعليم الذاتي للطلاب في جميع المراحل العمرية، والطلاب الذين يعانون من صعوبة التعلم.</p>                  
                 </div>
             </div>
-
+            </div>
+        </div>
         </section>
 
 
@@ -722,6 +858,16 @@ h1,h2,h3,h4,h5,h6,p,li,a,button{
     <!-- End:Footer Section
 ========================================-->
 <script>
+            function reverseList() {
+    const list = document.querySelector('.my-list');
+    const items = Array.from(list.children);
+    if (window.innerWidth <= 992) {
+        items.reverse().forEach(item => list.appendChild(item));
+    }
+    else {
+        
+    }
+}
    const locales = ["ar-AE", "en-GB"];
 
 function getFlagSrc(countryCode) {
@@ -771,6 +917,30 @@ function setSelectedLocale(locale) {
 setSelectedLocale(locales[0]);
 
 </script>
+<script>
+    $(document).ready(function(){
+        $('.customer-logos').slick({
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 1500,
+            arrows: false,
+            dots: false,
+            pauseOnHover: false,
+            responsive: [{
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 4
+                }
+            }, {
+                breakpoint: 520,
+                settings: {
+                    slidesToShow: 3
+                }
+            }]
+        });
+    });
+</script>
     <!-- Scripts
 ========================================-->
     <!-- jquery -->
@@ -779,7 +949,9 @@ setSelectedLocale(locales[0]);
     <script src="../js/plugins.js"></script>
     <!-- Bootstrap -->
     <script src="../js/bootstrap.min.js"></script>
+    
     <script src="../js/slick.min.js"></script>
+
     <script src="../js/jquery.stellar.min.js"></script>
 
 

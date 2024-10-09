@@ -175,23 +175,37 @@
       background: #c2c9d2;
     }
     .blog-slider-avatar{
-        display: none;
-    }
-    @media (max-width:1200px) {
-        .blog-slider-avatar{
+        border: 4px solid #fcb51c;
+        width: 32%;
+        overflow: hidden;
             margin: 20px;
-            padding-bottom: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #42C0C6;
+    background: #253849;
     border-radius: 100%;
     }
-    .blog-slider-avatar img{
-        width: 55% !important;
+    
+    @media (max-width:1200px) {
+        .blog-slider-avatar{
+        width:40%;
     }
     }
-    @media (max-width:992px) {
+    @media (max-width:700px) {
+        .ceo-row{
+            flex-direction: column-reverse;
+        }
+        .blog-slider-avatar{
+            border: 4px solid #fcb51c;
+        width: 70%;
+        overflow: hidden;
+            margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #253849;
+    border-radius: 100%;
+    }
         #dropdown-btn{
             display: none;
         }
@@ -311,7 +325,7 @@
 
 <section class="about-section" dir="rtl">
     <!-- Container -->
-    <div class="container" style="background: linear-gradient(2deg, #1F497E, #EAF1ED);border-radius: 5px;">
+    <div class="container" style="background: linear-gradient(2deg, #7f95af, #EAF1ED);border-radius: 10px;">
             <div class="col-12">
                 <div class="about_text">
                     <h3 class="text-center" style="padding-top: 30px;">CEO's speech</h3>
@@ -321,20 +335,25 @@
                         We are committed to building strong bridges of trust and creativity with our partners and customers, setting a noble goal in our sights represented by: transforming our ideas and ambitions into a tangible reality, thanks to our team that is characterized by efficiency and commitment. We draw strength from every challenge we face. And I am fully confident that every challenge is a disguised opportunity, and every step we take paves the way for greater and greater achievements.
                         We are here to think, inspire, innovate, and achieve the impossible. Our ambitions know no bounds, and our determination to achieve success is sustainable. We promise you that we will remain at the forefront of innovation, illuminating our path with an inextinguishable passion. Together, we will write new stories of success whose impact will resonate through generations, where creativity inspires our journey, and excellence raises our flag.
                         
-                        CEO
-                        Faisal Fahad Amer
+                        
                     </p>
-                            
+                    <div class="row ceo-row">
+                        <div class="col-lg-8">
+                            <!-- /.abt_rating-->
+                            <div class="about_img" style="display: flex;justify-content: center;" id="scene2">
+                                <img class="ceo-image" src="../images/Mr.faisal.png" alt="image" class="layer" data-depth="0.28">
+                            </div>
+                            <!-- /.about_img-->
+                            <!-- /.abt_course-->
+                        </div>
+                        <div class="col-lg-4">
+                         <h3 style="color: #19447b;">
+                            Faisal Fahad Amer</h3>   
+                        </div>
                 </div>
             </div>
-     <div>
-                <!-- /.abt_rating-->
-                <div class="about_img" style="display: flex;justify-content: center;" id="scene2">
-                    <img class="ceo-image" src="../images/Mr.faisal.png" alt="image" class="layer" data-depth="0.28">
-                </div>
-                <!-- /.about_img-->
-                <!-- /.abt_course-->
-            </div>
+
+        </div>
             
             <!--/ col-md-12  -->
         <!--/ row - -->
@@ -470,18 +489,21 @@
                                 <!-- Container -->
                                 <div class="container pt-5">
                                     <div class="row">
-                                        <div class="col-12 blog-slider"  id="lfeedback_cur"  >
+                                        <div class="col-12 blog-slider d-flex justify-content-center"  id="lfeedback_cur"  >
+                                            
                                             <div class="lfeedback_item ">
                                                 <!-- Start: Heading -->
                                                 <div class="base-header">
                                                     <h4 class="blog-slider-title">Dr.Hussein Zanati</h4>
                                                 </div>
+                                                <div class="d-flex justify-content-center">
                                                 <div class="blog-slider-avatar">
                                                     <img src="../images/ZANATE.png">
                                                 </div>
+                                            </div>
                                                 <!-- Best Book Image 1 -->
-                                                <div class="lfeedback_text blog-slider-text">
-                                                    
+                                                <div class="lfeedback_text blog-slider-text ">
+                                                    <div class="container">
                                                    
                                                 <p>
 
@@ -515,6 +537,7 @@
                                                   </p>
                                         
                                                 </div>
+                                            </div>
                                             </div>
                                         </div>
                                         <!--/ col-md-12  -->
@@ -721,7 +744,7 @@
 </footer>
 <!-- End:Footer Section
 ========================================-->
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 <script>
 const locales = ["ar-AE", "en-GB"];
 
