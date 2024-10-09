@@ -62,8 +62,8 @@
         $('#popula_cat').slick({
             centerMode: true,
             centerPadding: '0px',
-            slidesToShow: 4,
-            slidesToScroll: 4,
+            slidesToShow: 3,
+            slidesToScroll: 3,
             arrows: true,
             dots: false,
             autoplay: true,
@@ -72,28 +72,42 @@
             nextArrow: '<i class="arrow_right"></i>',
             responsive: [
                 {
-                    breakpoint: 1199,
+                    breakpoint: 1500,
+                    settings: {
+                        slidesToShow: 6,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint:  1300,
+                    settings: {
+                        slidesToShow: 5,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint:  1190,
                     settings: {
                         slidesToShow: 4,
                         slidesToScroll: 1
                     }
                 },
                 {
-                    breakpoint: 991,
+                    breakpoint:  991,
                     settings: {
                         slidesToShow: 3,
                         slidesToScroll: 1
                     }
                 },
                 {
-                    breakpoint: 767,
+                    breakpoint:767 ,
                     settings: {
                         slidesToShow: 2,
                         slidesToScroll: 1
                     }
                 },
                 {
-                    breakpoint: 580,
+                    breakpoint: 580 ,
                     settings: {
                         slidesToShow: 1,
                         slidesToScroll: 1
