@@ -52,7 +52,7 @@
     <link href="../css/style.css" rel="stylesheet">
     <link href="../css/responsive.css" rel="stylesheet">
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
 
     <!--[if IE]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -183,23 +183,40 @@ h1,h2,h3,h4,h5,h6,p,li,a,button{
       background: #c2c9d2;
     }
     .blog-slider-avatar{
-        display: none;
-    }
-    @media (max-width:1200px) {
-        .blog-slider-avatar{
+        border: 4px solid #fcb51c;
+        width: 32%;
+        overflow: hidden;
             margin: 20px;
-            padding-bottom: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #42C0C6;
+    background: #253849;
     border-radius: 100%;
     }
-    .blog-slider-avatar img{
-        width: 55% !important;
+    .blog-slider-text p{
+        text-align: right;
+    }
+    
+    @media (max-width:1200px) {
+        .blog-slider-avatar{
+        width:40%;
     }
     }
-    @media (max-width:992px) {
+    @media (max-width:700px) {
+        .ceo-row{
+            flex-direction: column-reverse;
+        }
+        .blog-slider-avatar{
+            border: 4px solid #fcb51c;
+        width: 70%;
+        overflow: hidden;
+            margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #253849;
+    border-radius: 100%;
+    }
         #dropdown-btn{
             display: none;
         }
@@ -212,12 +229,13 @@ h1,h2,h3,h4,h5,h6,p,li,a,button{
         }
 
     }
+    
     .slick-slide {
             margin: 0px 20px;
         }
 
         .slick-slide img {
-            width: 100%;
+            width: 80%;
         }
         .slick-slider
         {
@@ -325,13 +343,21 @@ h1,h2,h3,h4,h5,h6,p,li,a,button{
         .slick-arrow.slick-hidden {
             display: none;
         }
+        .customer-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slick-slide img {
+    width: 90%;  /* Ensures images are properly sized */
+}
         @media (max-width: 768px) {
             .title h1{
                 font-size: 20px !important;
             }
         }
 </style>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body style="font-family: arabic !important;">
@@ -505,11 +531,7 @@ h1,h2,h3,h4,h5,h6,p,li,a,button{
                     </div>
                 </div>
                     </div>
-                    <div class="col-lg-4 col-sm-12 blog-area">
-                       <img style="padding-bottom: 60px;" src="../images/logos/svu.png" alt="">
-                       <img style="padding-top: 50px;" src="../images/logos/alshabaka-arabian-logo.png" alt="">
-                       <img style="padding-top: 100px;" src="../images/logos/logo-chukyo.jpg" alt="">
-                    </div>
+                
                 </div>
                     <div class="col-12">
                     <div class="blog_wrp">
@@ -598,70 +620,69 @@ h1,h2,h3,h4,h5,h6,p,li,a,button{
         </section>
 
 
-
-                        <section class="lfeedback-section">
+        <section class="lfeedback-section">
                              
-                        <h3 class="text-center fs-1"> كوادرنا </h3>
+            <h3 class="text-center fs-1"> كوادرنا </h3>
 
-                            <!-- Container -->
-                            <div class="container pt-5">
-                                <div class="row">
-                                    <div class="col-12 blog-slider"  id="lfeedback_cur" dir="rtl" >
-                                        <div class="lfeedback_item ">
-                                            <!-- Start: Heading -->
-                                            <div class="base-header">
-                                                <h4 class="blog-slider-title">الدكتور حسين الزناتي</h4>
-                                            </div>
-                                            <div class="blog-slider-avatar">
-                                                <img src="../images/ZANATE.png">
-                                            </div>
-                                            <!-- Best Book Image 1 -->
-                                            <div class="lfeedback_text blog-slider-text">
-                                                
-                                                <p> 
-                                                    ١- حاصل على الدكتوراه في هندسة تكنولوجيا المعلومات - التعليم الإلكتروني والتطبيق على التعليم الأساسي من جامعة كيتامي في اليابان
-                                                    <br>  
-                                                    ٢. حاصل على شهادة الماجستير في التعليم من جامعة هايدلبرغ الأمريكية 
-                                                      <br>
-                                                      ٣. مشرف سابق مع مؤسسة الجايكا اليابانية بمصر على تقييم الأنشطة اليابانية بالمدارس المصرية اليابانية في مصر بدعوة من هيئة الجايكا بالي
-                                                      ابان  
-                                                    <br>
-                                                      ٤. منسق عام برامج البيئة العالمي للشرق الأوسط بالمعهد العالي للدراسات المتقدمة في الذكاء الاصطناعي بجامعة تشوكيو - مدينة تويوتا - اليابان/ تطبيق هندسة الميديا في التعليم المجتمعي بالقرى الفقيرة 
-                                                     <br>
-                                                      ٥. دكتور باحث بالمعهد العالي للدراسات والعلوم - جامعة تشوكيو - اليابان 
-                                                    <br>
-                                                      ٦. مصمم مناهج التعليم بأكاديمية تانكيو اليابانية في تبسيط العلوم الإنسانية والحياتية والاستكشاف والإبداع للتعليم الأساسي في اليابان 
-                                                    <br>
-                                                      ٧. مدرب تربوي وتقني للمعلمين بالتعليم الأساسي وما قبل التعليم الجامعي باليابان  
-                                                     <br>
-                                                      ٨. معد ومقدم مناهج المنحة التعليمية في استكشاف العلوم والفيزياء والرياضيات لطلاب مصر أثناء توقف المدارس المصرية في فترة كورونا  
-                                                      <br>
-                                                      ٩. عضو مؤسس في مؤسسة علماء مصر بالخارج، مؤسسة مصر تستطيع  
-                                                    <br> 
-                                                      ١. المدير التنفيذي لجمعية الصداقة المصرية اليابانية  
-                                                      <br>
-                                                      ١١. منسق عام ومؤسس برامج التوأمة الياباني العربي الأكاديمي في التعليم الأساسي والتعليم العالي
-                                                      <br>
-                                                      ١٢. متحدث سابق في المائدة المستديرة العربية اليابانية ومؤتمرات التنمية المستدامة التابعة لجامعة الدول العربية
-                                                      <br>
-                                                      ١٣. الرئيس التنفيذي للمركز العربي الياباني التابع لجامعة الدول العربية
-                                                  </p>
-                                                
-
-
-
-
-                                    
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--/ col-md-12  -->
+                <!-- Container -->
+                <div class="container pt-5">
+                    <div class="row">
+                        <div class="col-12 blog-slider d-flex justify-content-center"  id="lfeedback_cur"  >
+                            
+                            <div class="lfeedback_item ">
+                                <!-- Start: Heading -->
+                                <div class="base-header">
+                                    <h4 class="blog-slider-title">الدكتور حسين الزناتي</h4>
                                 </div>
-                                <!--/ row - -->
+                                <div class="d-flex justify-content-center">
+                                <div class="blog-slider-avatar">
+                                    <img src="../images/ZANATE.png">
+                                </div>
                             </div>
-                            <!--/ Container - -->
-                        </section>
-
+                                <!-- Best Book Image 1 -->
+                                <div class="lfeedback_text blog-slider-text ">
+                                    <div class="container">
+                                   
+                                        <p> 
+                                            ١- حاصل على الدكتوراه في هندسة تكنولوجيا المعلومات - التعليم الإلكتروني والتطبيق على التعليم الأساسي من جامعة كيتامي في اليابان
+                                            <br>  
+                                            ٢. حاصل على شهادة الماجستير في التعليم من جامعة هايدلبرغ الأمريكية 
+                                              <br>
+                                              ٣. مشرف سابق مع مؤسسة الجايكا اليابانية بمصر على تقييم الأنشطة اليابانية بالمدارس المصرية اليابانية في مصر بدعوة من هيئة الجايكا بالي
+                                              ابان  
+                                            <br>
+                                              ٤. منسق عام برامج البيئة العالمي للشرق الأوسط بالمعهد العالي للدراسات المتقدمة في الذكاء الاصطناعي بجامعة تشوكيو - مدينة تويوتا - اليابان/ تطبيق هندسة الميديا في التعليم المجتمعي بالقرى الفقيرة 
+                                             <br>
+                                              ٥. دكتور باحث بالمعهد العالي للدراسات والعلوم - جامعة تشوكيو - اليابان 
+                                            <br>
+                                              ٦. مصمم مناهج التعليم بأكاديمية تانكيو اليابانية في تبسيط العلوم الإنسانية والحياتية والاستكشاف والإبداع للتعليم الأساسي في اليابان 
+                                            <br>
+                                              ٧. مدرب تربوي وتقني للمعلمين بالتعليم الأساسي وما قبل التعليم الجامعي باليابان  
+                                             <br>
+                                              ٨. معد ومقدم مناهج المنحة التعليمية في استكشاف العلوم والفيزياء والرياضيات لطلاب مصر أثناء توقف المدارس المصرية في فترة كورونا  
+                                              <br>
+                                              ٩. عضو مؤسس في مؤسسة علماء مصر بالخارج، مؤسسة مصر تستطيع  
+                                            <br> 
+                                              ١. المدير التنفيذي لجمعية الصداقة المصرية اليابانية  
+                                              <br>
+                                              ١١. منسق عام ومؤسس برامج التوأمة الياباني العربي الأكاديمي في التعليم الأساسي والتعليم العالي
+                                              <br>
+                                              ١٢. متحدث سابق في المائدة المستديرة العربية اليابانية ومؤتمرات التنمية المستدامة التابعة لجامعة الدول العربية
+                                              <br>
+                                              ١٣. الرئيس التنفيذي للمركز العربي الياباني التابع لجامعة الدول العربية
+                                          </p>
+                        
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <!--/ col-md-12  -->
+                    </div>
+                    <!--/ row - -->
+                </div>
+                <!--/ Container - -->
+            </section>
+                    
 
     <!-- End: Hero Section
 ==================================================-->
@@ -917,29 +938,34 @@ function setSelectedLocale(locale) {
 setSelectedLocale(locales[0]);
 
 </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="../js/slick.min.js"></script>
 <script>
-    $(document).ready(function(){
-        $('.customer-logos').slick({
-            slidesToShow: 6,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 1500,
-            arrows: false,
-            dots: false,
-            pauseOnHover: false,
-            responsive: [{
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 4
-                }
-            }, {
-                breakpoint: 520,
-                settings: {
-                    slidesToShow: 3
-                }
-            }]
-        });
-    });
+    $('.customer-logos').slick({
+    slidesToShow: 6,  // Shows 6 logos at once
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1500,
+    arrows: false,
+    dots: false,
+    pauseOnHover: false,
+    responsive: [{
+        breakpoint: 2000,  // New breakpoint for medium screens
+        settings: {
+            slidesToShow: 5
+        }
+    }, {
+        breakpoint: 768,  // Small screens
+        settings: {
+            slidesToShow: 3
+        }
+    }, {
+        breakpoint: 520,  // Extra small screens
+        settings: {
+            slidesToShow: 2
+        }
+    }]
+});
 </script>
     <!-- Scripts
 ========================================-->
@@ -949,15 +975,18 @@ setSelectedLocale(locales[0]);
     <script src="../js/plugins.js"></script>
     <!-- Bootstrap -->
     <script src="../js/bootstrap.min.js"></script>
-    
     <script src="../js/slick.min.js"></script>
-
     <script src="../js/jquery.stellar.min.js"></script>
+    
+    
+    <!-- Custom Scripts
+    ========================================-->
+    <script src="../js/main.js"></script>
 
 
     <!-- Custom Scripts
 ========================================-->
-    <script src="../js/main.js"></script>
+   
 
 </body>
 

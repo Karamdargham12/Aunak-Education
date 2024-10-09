@@ -57,7 +57,27 @@
     /*=======================================
         Product  slider  
     =======================================*/
-
+    function closeSlider(x) {
+        var element = document.querySelector('.add-close-slider');
+        
+        // Ensure the element exists before trying to set the id
+        if (element) {
+            if (x.matches) { // If media query matches (max-width: 850px)
+                element.id = ""; // Remove the id
+            } else {
+                element.id = "popula_cat"; // Add the id for larger screens
+            }
+        } else {
+            console.warn('Element with class "add-close-slider" not found.');
+        }
+    }
+    
+    var x = window.matchMedia("(max-width: 850px)");
+    closeSlider(x); // Initial call to set the state based on current screen size
+    x.addEventListener("change", function() {
+        closeSlider(x); // Re-run function when screen size changes
+    });
+    
     $('#popula_cat').each( function () {
         $('#popula_cat').slick({
             centerMode: true,
@@ -67,7 +87,7 @@
             arrows: true,
             dots: false,
             autoplay: true,
-            autoplaySpeed: 4000,
+            autoplaySpeed: 2000,
             prevArrow: '<i class="arrow_left"></i>',
             nextArrow: '<i class="arrow_right"></i>',
             responsive: [
